@@ -1,0 +1,93 @@
+DotNetNuke - Gallery
+
+Version 4.02.00, Released 2007.0?.??
+ - Fixed many FxCop warnings 
+ - Changed XML file date format to be standard XML format dates (instead of US)
+ - Added more error checking/logging when uploading files
+ - Rearranged a bunch of the app_code\gallery files to make it easier to understand
+
+Version 4.01.00, Released 2007.05.10
+ - Put Gallery into a DNN install package
+ - Updated the documentation files
+ - Merged doc files to incorporate James Jegers changes
+ - Add sqldataprovider script so that "delete" script would run
+
+
+James Jegers Patched Release 2007.04.30
+ - Fixed slideshow with Firefox, bad javascript code (ControlSlideshow.ascx)
+ - Fixed compiler warnings (UploadCollection.vb, XML.vb, GalleryPopupData.vb, 
+			    Authorization.vb, ControlUpload.ascx.vb, FileEdit.ascx.vb,
+			    Maintenance.ascx.vb, MediaPlayer.ascx, Settings.ascx.vb,
+			    AlbumEdit.ascx.vb, CardView.vb, ListView.vb, StandardView.vb)
+
+
+James Jegers Patched Release 2007.04.24
+ - Fixed so that errors generated when uploading files would actually be shown (ControlUpload.ascx.vb)
+ - Added better error logging when the upload of files fails (ControlUpload.ascx.vb)
+ - Add logging when can not write the xml file (XML.vb)
+ - Add logging when we can't init the control (Container.ascx.vb)
+ - Add logging when the control load fails (ControlPager.ascx.vb)
+
+
+James Jegers Patched Release 2007.04.20
+ - Fixed issue with UNC paths as submitted by MarkV/Patrick Chin
+
+
+James Jegers Patched Release 2007.04.16, (Also packaged version 4.00.00)
+ - Fixed problem in my last release where the graphics.vb image resizing change was not included
+ - Removed extra </TD> (ExifMetaData.aspx)
+ - Added reference to ControlGalleryMenu.ascx (Maintenance.ascx)
+ - Add comments in the code everywhere I made a change
+ - Add an HTML comment so I can help determine if people installed correctly (Container.ascx)
+
+
+James Jegers Patched Releaese 2006.12.08
+ - Problem adding pictures/directories manually.  Random number generator was assigning same ID to two things  (Folder.vb)
+
+
+James Jegers Patched Release 2006.10.29
+ - Start slideshow with first image in the group and not last (ControlSlideShow.ascx.vb)
+ - Wrap slideshow first image URL in ""'s in case there are spaces in the name/path (ControlSlideShow.ascx.vb)
+ - ReCreated pages so that flash files will work again (FlashPlayer.aspx/vb, FlashPlayer.ascx/vb, ControlFlashPlayer.ascx/vb)
+ - Fixed spelling on Maintenant tooltip button (ListView.vb)
+ - When uploading, default the title to be the full filename without extention, not just up to the first period (Folder.vb)
+ - Add missing m_back.gif so that back button works on non-popup screens (m_back.gif)
+ - Add "All Users" to available download roles (Settings.ascx.vb.BindDR, GalleryPopupData.vb.new)
+ - Fix download roles to lookup by name instead of by ID (Config.vb.HasDownloadPermission)
+
+
+James Jegers Patched Release 2006.10.24
+ - Removed extra </td> tags (ExifMetaData.ascx)
+ - Fixed date issues when using foreign date formats, I aways read/write dates in config file as US format (XML.vb)
+
+
+James Jegers Patched Release 2006.10.21
+ - Fixed stylesheet being put before the <HTML><HEAD> causing IE6 to not draw correctly or popup menus not working 	
+	(ControlGalleryMenu.ascx.vb,ControlMediaMenu.vb ctrlmenu.SeparteCSS=True)
+ - Removed extra </label> fields (ControlAlbumn.ascx)
+ - Fixed to correctly resize horizontal(landscape) images fully (Utilities/Graphics.vb)
+ - Fixed download roles window to not report a server error
+	(ControlLookup.ascx.vb	Get moduleid from querystring)
+ - Allow searching for users when selecting a new owner for module
+	(GalleryPopupdata.vb	ObjectClass.DNNUser code move around)
+ - Converted the gallery to .NET 2.0, (changed CodeFile tag and added 2 stub classes)
+
+
+Version 3.0.12/3.1.12, Released 2006.06.20
+ - Offical Beta version released to public
+
+
+Version 3.01.11
+ - Skinning issues corrected.
+ - Business controller class in dnn file corrected.
+ - GAL-1968 - Added missing save image in image editor popup.
+ - GAL-1981 - Renamed Skins to Themes.
+ - GAL-1983 - Corrected popup cancel so it will no longer clear existing data.
+
+
+Version 3.0.10
+ - Fixed Pager Control so it now shows when more than one "page" of pics in an album.
+ - Changed CssClasses to be prefixed with Gallery_ to avoid possible conflict with portal skins.
+ - Added missing localization help and text items.
+ - Corrected image gap in default DotNetNuke gallery skin. (surrounded album(s))
+ - Added Css Class for new forum navbar and "My Posts" and "Moderate"

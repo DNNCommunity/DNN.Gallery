@@ -1,0 +1,52 @@
+<div>
+    <h2>About the DotNetNuke Gallery Module</h2>
+    <p>
+        <b>Version 04.04.00</b><br /><br />
+        <b>This version of the module requires DotNetNuke Core 5.6.2 or later.</b><br /><br />
+        <i>Developers should be aware that this version was developed in Visual Studio 2010 and includes only Visual Studio 2010 solution/project files.
+           A MSBuild script (requires MS Build Community Tasks) is included to automatically package the module.</i>
+    </p>
+    <h3>Tasks Completed, Issues Fixed and Enhancements</h3>
+    <p style="padding-left: 10px">(See http://dnngallery.codeplex.com/workitem/list/basic for details)</p>
+    <ul>
+        <li><b>Completed the following tasks:</b><br />
+            <ul>
+                <li>ID: 20284 - Updated copyright year (2011) across all module files.</li>
+                <li>ID: 20285 - Converted Gallery from a VS2008 to VS2010 Web Application Project.</li>
+                <li>ID: 20285 - Refactored code to remove 43 compile warnings re core methods marked obsolete/deprecated in DNN 5.x.</li>
+                <li>ID: 20285 - Repackaged with DNN 5 manifest (dnn) file and separate release notes and license file.</li>     
+            </ul>
+        </li>
+        <li><b>Fixed the following issues:</b><br />
+	        <ul>
+                <li>ID: 15082 - Revised all user control markup and code as well as css stylesheets in all four themes for
+                                XHTML 1.0 Transitional compatibility. Removed all XHTML 1.1 strict deprecated html markup attributes 
+                                and in-line styles (except were necessary to programatically inject a width value based on configuration settings).</li>
+                <li>ID: 15082 - Reviewed and modified where necessary all controls for better consistancy of styling between controls.</li>
+		        <li>ID: 19351 - Unable to add child album containing uni-code characters if the album name began with a uni-code character.</li>
+                <li>ID: 19353 - Adding filename containing % character results in broken thumbnail and other errors.</li>
+                <li>ID: 19354 - Fixed missing localization of item (Copyright) in Exif data grid.</li>
+                <li>ID: 20102 - Incorrect formatting of value "Permissable File Upload Types" - movie in Add File control.</li>
+                <li>ID: 20331 - Number of media items contained in album not shown in standard, list or card views.</li> 
+                <li>ID: 20224 - Localization for client field ("Notes") is incorrect ("Client") in Add File control.</li>  
+                <li>ID: 20283 - Multiple controls of the same ID error in media context menu when DNN FolderID and FileID happen to be identical on same Gallery page.</li>
+                <li>ID: 20289 - Icon button tooltips are not displayed in list view.</li>
+                <li>ID: 20291 - Popup slideshow started from thumbnail context menu does not "pop-up".</li>
+                <li>ID: 20444 - Fixed performance issue due to potentially huge (30,000 +) number of Maker Note data value pairs when displaying Exif data grid.</li>
+   	        </ul>
+	    </li>
+        <li><b>Added the following enhancements:</b><br />
+	        <ul>
+                <li>ID: 20439 - Added configuration setting "Default Album" to force Gallery to dispaly a specific album (rather than the top level)
+                                when browsing to a page containing the module.</li>
+                <li>ID: 20509 - Revised client-side slideshow script to use jQuery to provide smooth fade-in/fade-out between images that 
+                                should work in most late version browsers rather than the legacy code's IE only filter.</li>
+                <li>ID: 20510 - Added capability to pause slideshow on hover over current image.</li>
+                <li>ID: 20511 - Restyled and extended functionality of the Album Maintenance control including eliminating post-backs on operations such
+                                as "Select All" and "Deselect All".</li>
+                <li>ID: 20512 - Refactored gallery configuration, album, and pending uploades caching to use expired cache item callback (GetCachedData)
+                                pattern available in DNN 5.x.</li>
+            </ul>
+        </li>
+    </ul>
+</div>

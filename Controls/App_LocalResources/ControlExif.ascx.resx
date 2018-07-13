@@ -1,0 +1,1290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ID.Header" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Category.Header" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="Name.Header" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Value.Header" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="GPSLatitudeRef.Text" xml:space="preserve">
+    <value>GPSLatitudeRef</value>
+  </data>
+  <data name="GPSLatitude.Text" xml:space="preserve">
+    <value>GPSLatitude</value>
+  </data>
+  <data name="GPSLongitudeRef.Text" xml:space="preserve">
+    <value>GPSLongitudeRef</value>
+  </data>
+  <data name="GPSLongitude.Text" xml:space="preserve">
+    <value>GPSLongitude.Text</value>
+  </data>
+  <data name="GPSAltitudeRef.Text" xml:space="preserve">
+    <value>GPSAltitudeRef</value>
+  </data>
+  <data name="GPSAltitude.Text" xml:space="preserve">
+    <value>GPSAltitude</value>
+  </data>
+  <data name="GPSTimeStamp.Text" xml:space="preserve">
+    <value>GPSTimeStamp</value>
+  </data>
+  <data name="GpsSatellites.Text" xml:space="preserve">
+    <value>GpsSatellites</value>
+  </data>
+  <data name="GpsStatus.Text" xml:space="preserve">
+    <value>GpsStatus</value>
+  </data>
+  <data name="GpsMeasureMode.Text" xml:space="preserve">
+    <value>GpsMeasureMode</value>
+  </data>
+  <data name="GpsDop.Text" xml:space="preserve">
+    <value>GpsDop</value>
+  </data>
+  <data name="GPSSpeedRef.Text" xml:space="preserve">
+    <value>GPSSpeedRef</value>
+  </data>
+  <data name="GPSSpeed.Text" xml:space="preserve">
+    <value>GPSSpeed</value>
+  </data>
+  <data name="GPSTrackRef.Text" xml:space="preserve">
+    <value>GPSTrackRef</value>
+  </data>
+  <data name="GPSTrack.Text" xml:space="preserve">
+    <value>GPSTrack</value>
+  </data>
+  <data name="GPSImgDirRef.Text" xml:space="preserve">
+    <value>GPSImgDirRef</value>
+  </data>
+  <data name="GPSImgDir.Text" xml:space="preserve">
+    <value>GPSImgDir</value>
+  </data>
+  <data name="GPSMapDatum.Text" xml:space="preserve">
+    <value>GPSMapDatum</value>
+  </data>
+  <data name="GPSDestLatRef.Text" xml:space="preserve">
+    <value>GPSDestLatRef</value>
+  </data>
+  <data name="GPSDestLat.Text" xml:space="preserve">
+    <value>GPSDestLat</value>
+  </data>
+  <data name="GPSDestLongRef.Text" xml:space="preserve">
+    <value>GPSDestLongRef</value>
+  </data>
+  <data name="GPSDestLong.Text" xml:space="preserve">
+    <value>GPSDestLong</value>
+  </data>
+  <data name="GPSDestBearRef.Text" xml:space="preserve">
+    <value>GPSDestBearRef</value>
+  </data>
+  <data name="GPSDestBear.Text" xml:space="preserve">
+    <value>GPSDestBear</value>
+  </data>
+  <data name="GPSDestDistRef.Text" xml:space="preserve">
+    <value>GPSDestDistRef</value>
+  </data>
+  <data name="GPSDestDist.Text" xml:space="preserve">
+    <value>GPSDestDist</value>
+  </data>
+  <data name="NewSubfileType.Text" xml:space="preserve">
+    <value>NewSubfileType</value>
+  </data>
+  <data name="SubfileType.Text" xml:space="preserve">
+    <value>SubfileType</value>
+  </data>
+  <data name="ImageWidth.Text" xml:space="preserve">
+    <value>ImageWidth</value>
+  </data>
+  <data name="ImageHeight.Text" xml:space="preserve">
+    <value>ImageHeight</value>
+  </data>
+  <data name="BitsPerSample.Text" xml:space="preserve">
+    <value>BitsPerSample</value>
+  </data>
+  <data name="Compression.Text" xml:space="preserve">
+    <value>Compression</value>
+  </data>
+  <data name="ThreshHolding.Text" xml:space="preserve">
+    <value>ThreshHolding</value>
+  </data>
+  <data name="CellWidth.Text" xml:space="preserve">
+    <value>CellWidth</value>
+  </data>
+  <data name="CellHeight.Text" xml:space="preserve">
+    <value>CellHeight</value>
+  </data>
+  <data name="FillOrder.Text" xml:space="preserve">
+    <value>FillOrder</value>
+  </data>
+  <data name="DocumentName.Text" xml:space="preserve">
+    <value>DocumentName</value>
+  </data>
+  <data name="ImageDescription.Text" xml:space="preserve">
+    <value>ImageDescription</value>
+  </data>
+  <data name="StripOffsets.Text" xml:space="preserve">
+    <value>StripOffsets</value>
+  </data>
+  <data name="Orientation.Text" xml:space="preserve">
+    <value>Orientation</value>
+  </data>
+  <data name="SamplesPerPixel.Text" xml:space="preserve">
+    <value>SamplesPerPixel</value>
+  </data>
+  <data name="RowsPerStrip.Text" xml:space="preserve">
+    <value>RowsPerStrip.Text</value>
+  </data>
+  <data name="StripBytesCount.Text" xml:space="preserve">
+    <value>StripBytesCount</value>
+  </data>
+  <data name="MinSampleValue.Text" xml:space="preserve">
+    <value>MinSampleValue</value>
+  </data>
+  <data name="MaxSampleValue.Text" xml:space="preserve">
+    <value>MaxSampleValue</value>
+  </data>
+  <data name="XResolution.Text" xml:space="preserve">
+    <value>XResolution</value>
+  </data>
+  <data name="YResolution.Text" xml:space="preserve">
+    <value>YResolution</value>
+  </data>
+  <data name="PlanarConfig.Text" xml:space="preserve">
+    <value>PlanarConfig</value>
+  </data>
+  <data name="PageName.Text" xml:space="preserve">
+    <value>PageName</value>
+  </data>
+  <data name="XPosition.Text" xml:space="preserve">
+    <value>XPosition</value>
+  </data>
+  <data name="YPosition.Text" xml:space="preserve">
+    <value>YPosition</value>
+  </data>
+  <data name="FreeOffset.Text" xml:space="preserve">
+    <value>FreeOffset</value>
+  </data>
+  <data name="FreeByteCounts.Text" xml:space="preserve">
+    <value>FreeByteCounts</value>
+  </data>
+  <data name="GrayResponseUnit.Text" xml:space="preserve">
+    <value>GrayResponseUnit</value>
+  </data>
+  <data name="GrayResponseCurve.Text" xml:space="preserve">
+    <value>GrayResponseCurve</value>
+  </data>
+  <data name="T4Option.Text" xml:space="preserve">
+    <value>T4Option</value>
+  </data>
+  <data name="T6Option.Text" xml:space="preserve">
+    <value>T6Option.Text</value>
+  </data>
+  <data name="ResolutionUnit.Text" xml:space="preserve">
+    <value>ResolutionUnit</value>
+  </data>
+  <data name="PageNumber.Text" xml:space="preserve">
+    <value>PageNumber</value>
+  </data>
+  <data name="TransferFunction.Text" xml:space="preserve">
+    <value>TransferFunction</value>
+  </data>
+  <data name="SoftwareUsed.Text" xml:space="preserve">
+    <value>SoftwareUsed</value>
+  </data>
+  <data name="DateTime.Text" xml:space="preserve">
+    <value>DateTime</value>
+  </data>
+  <data name="HostComputer.Text" xml:space="preserve">
+    <value>HostComputer</value>
+  </data>
+  <data name="Predictor.Text" xml:space="preserve">
+    <value>Predictor.Text</value>
+  </data>
+  <data name="WhitePoint.Text" xml:space="preserve">
+    <value>WhitePoint</value>
+  </data>
+  <data name="PrimaryChromaticities.Text" xml:space="preserve">
+    <value>PrimaryChromaticities</value>
+  </data>
+  <data name="ColorMap.Text" xml:space="preserve">
+    <value>ColorMap</value>
+  </data>
+  <data name="HalftoneHints.Text" xml:space="preserve">
+    <value>HalftoneHints</value>
+  </data>
+  <data name="TileWidth.Text" xml:space="preserve">
+    <value>TileWidth</value>
+  </data>
+  <data name="TileLength.Text" xml:space="preserve">
+    <value>TileLength</value>
+  </data>
+  <data name="TileOffset.Text" xml:space="preserve">
+    <value>TileOffset.Text</value>
+  </data>
+  <data name="TileByteCounts.Text" xml:space="preserve">
+    <value>TileByteCounts</value>
+  </data>
+  <data name="InkSet.Text" xml:space="preserve">
+    <value>InkSet.Text</value>
+  </data>
+  <data name="InkNames.Text" xml:space="preserve">
+    <value>InkNames</value>
+  </data>
+  <data name="NumberOfInks.Text" xml:space="preserve">
+    <value>NumberOfInks</value>
+  </data>
+  <data name="DotRange.Text" xml:space="preserve">
+    <value>DotRange</value>
+  </data>
+  <data name="TargetPrinter.Text" xml:space="preserve">
+    <value>TargetPrinter</value>
+  </data>
+  <data name="ExtraSamples.Text" xml:space="preserve">
+    <value>ExtraSamples</value>
+  </data>
+  <data name="SampleFormat.Text" xml:space="preserve">
+    <value>SampleFormat</value>
+  </data>
+  <data name="SMinSampleValue.Text" xml:space="preserve">
+    <value>SMinSampleValue</value>
+  </data>
+  <data name="SMaxSampleValue.Text" xml:space="preserve">
+    <value>SMaxSampleValue</value>
+  </data>
+  <data name="TransferRange.Text" xml:space="preserve">
+    <value>TransferRange</value>
+  </data>
+  <data name="Proc.Text" xml:space="preserve">
+    <value>Proc</value>
+  </data>
+  <data name="InterFormat.Text" xml:space="preserve">
+    <value>InterFormat</value>
+  </data>
+  <data name="InterLength.Text" xml:space="preserve">
+    <value>InterLength</value>
+  </data>
+  <data name="RestartInterval.Text" xml:space="preserve">
+    <value>RestartInterval</value>
+  </data>
+  <data name="LosslessPredictors.Text" xml:space="preserve">
+    <value>LosslessPredictors</value>
+  </data>
+  <data name="PointTransforms.Text" xml:space="preserve">
+    <value>PointTransforms</value>
+  </data>
+  <data name="QTables.Text" xml:space="preserve">
+    <value>QTables</value>
+  </data>
+  <data name="DCTables.Text" xml:space="preserve">
+    <value>DCTables</value>
+  </data>
+  <data name="ACTables.Text" xml:space="preserve">
+    <value>ACTables</value>
+  </data>
+  <data name="YCbCrCoefficients.Text" xml:space="preserve">
+    <value>YCbCrCoefficients</value>
+  </data>
+  <data name="YCbCrSubsampling.Text" xml:space="preserve">
+    <value>YCbCrSubsampling</value>
+  </data>
+  <data name="YCbCrPositioning.Text" xml:space="preserve">
+    <value>YCbCrPositioning</value>
+  </data>
+  <data name="REFBlackWhite.Text" xml:space="preserve">
+    <value>REFBlackWhite</value>
+  </data>
+  <data name="Gamma.Text" xml:space="preserve">
+    <value>Gamma</value>
+  </data>
+  <data name="ICCProfileDescriptor.Text" xml:space="preserve">
+    <value>ICCProfileDescriptor</value>
+  </data>
+  <data name="SRGBRenderingIntent.Text" xml:space="preserve">
+    <value>SRGBRenderingIntent</value>
+  </data>
+  <data name="ImageTitle.Text" xml:space="preserve">
+    <value>ImageTitle</value>
+  </data>
+  <data name="ResolutionXUnit.Text" xml:space="preserve">
+    <value>ResolutionXUnit</value>
+  </data>
+  <data name="ResolutionYUnit.Text" xml:space="preserve">
+    <value>ResolutionYUnit.Text</value>
+  </data>
+  <data name="ResolutionXLengthUnit.Text" xml:space="preserve">
+    <value>ResolutionXLengthUnit.Text</value>
+  </data>
+  <data name="ResolutionYLengthUnit.Text" xml:space="preserve">
+    <value>ResolutionYLengthUnit</value>
+  </data>
+  <data name="PrintFlags.Text" xml:space="preserve">
+    <value>PrintFlags</value>
+  </data>
+  <data name="PrintFlagsVersion.Text" xml:space="preserve">
+    <value>PrintFlagsVersion.Text</value>
+  </data>
+  <data name="PrintFlagsCrop.Text" xml:space="preserve">
+    <value>PrintFlagsCrop</value>
+  </data>
+  <data name="PrintFlagsBleedWidth.Text" xml:space="preserve">
+    <value>PrintFlagsBleedWidth.Text</value>
+  </data>
+  <data name="PrintFlagsBleedWidthScale.Text" xml:space="preserve">
+    <value>PrintFlagsBleedWidthScale.Text</value>
+  </data>
+  <data name="HalftoneLPI.Text" xml:space="preserve">
+    <value>HalftoneLPI</value>
+  </data>
+  <data name="HalftoneLPIUnit.Text" xml:space="preserve">
+    <value>HalftoneLPI</value>
+  </data>
+  <data name="HalftoneDegree.Text" xml:space="preserve">
+    <value>HalftoneDegree.Text</value>
+  </data>
+  <data name="HalftoneShape.Text" xml:space="preserve">
+    <value>HalftoneShape</value>
+  </data>
+  <data name="HalftoneMisc.Text" xml:space="preserve">
+    <value>HalftoneMisc</value>
+  </data>
+  <data name="HalftoneScreen.Text" xml:space="preserve">
+    <value>HalftoneScreen</value>
+  </data>
+  <data name="JPEGQuality.Text" xml:space="preserve">
+    <value>JPEGQuality</value>
+  </data>
+  <data name="GridSize.Text" xml:space="preserve">
+    <value>GridSize</value>
+  </data>
+  <data name="Format.Text" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="Width.Text" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="Height.Text" xml:space="preserve">
+    <value>Height.Text</value>
+  </data>
+  <data name="ColorDepth.Text" xml:space="preserve">
+    <value>ColorDepth</value>
+  </data>
+  <data name="Planes.Text" xml:space="preserve">
+    <value>Planes</value>
+  </data>
+  <data name="RawBytes.Text" xml:space="preserve">
+    <value>RawBytes</value>
+  </data>
+  <data name="Size.Text" xml:space="preserve">
+    <value>Size.Text</value>
+  </data>
+  <data name="CompressedSize.Text" xml:space="preserve">
+    <value>CompressedSize.Text</value>
+  </data>
+  <data name="ColorTransferFunction.Text" xml:space="preserve">
+    <value>ColorTransferFunction</value>
+  </data>
+  <data name="PhotometricInterp.Text" xml:space="preserve">
+    <value>PhotometricInterp</value>
+  </data>
+  <data name="EquipMake.Text" xml:space="preserve">
+    <value>EquipMake</value>
+  </data>
+  <data name="EquipModel.Text" xml:space="preserve">
+    <value>EquipModel</value>
+  </data>
+  <data name="ResolutionX.Text" xml:space="preserve">
+    <value>ResolutionX.Text</value>
+  </data>
+  <data name="ResolutionY.Text" xml:space="preserve">
+    <value>ResolutionY.Text</value>
+  </data>
+  <data name="Artist.Text" xml:space="preserve">
+    <value>Artist</value>
+  </data>
+  <data name="Copyright.Text" xml:space="preserve">
+    <value>Copyright</value>
+  </data>
+  <data name="LuminanceTable.Text" xml:space="preserve">
+    <value>LuminanceTable</value>
+  </data>
+  <data name="ChrominanceTable.Text" xml:space="preserve">
+    <value>ChrominanceTable</value>
+  </data>
+  <data name="FrameDelay.Text" xml:space="preserve">
+    <value>FrameDelay</value>
+  </data>
+  <data name="LoopCount.Text" xml:space="preserve">
+    <value>LoopCount</value>
+  </data>
+  <data name="PixelUnit.Text" xml:space="preserve">
+    <value>PixelUnit</value>
+  </data>
+  <data name="PixelPerUnitX.Text" xml:space="preserve">
+    <value>PixelPerUnitX</value>
+  </data>
+  <data name="PixelPerUnitY.Text" xml:space="preserve">
+    <value>PixelPerUnitY</value>
+  </data>
+  <data name="PaletteHistogram.Text" xml:space="preserve">
+    <value>PaletteHistogram</value>
+  </data>
+  <data name="ExposureTime.Text" xml:space="preserve">
+    <value>ExposureTime</value>
+  </data>
+  <data name="FNumber.Text" xml:space="preserve">
+    <value>FNumber</value>
+  </data>
+  <data name="IFD.Text" xml:space="preserve">
+    <value>IFD</value>
+  </data>
+  <data name="ICCProfile.Text" xml:space="preserve">
+    <value>ICCProfile</value>
+  </data>
+  <data name="ExposureProg.Text" xml:space="preserve">
+    <value>ExposureProg</value>
+  </data>
+  <data name="SpectralSense.Text" xml:space="preserve">
+    <value>SpectralSense</value>
+  </data>
+  <data name="GpsIFD.Text" xml:space="preserve">
+    <value>GpsIFD</value>
+  </data>
+  <data name="ISOSpeed.Text" xml:space="preserve">
+    <value>ISOSpeed</value>
+  </data>
+  <data name="OECF.Text" xml:space="preserve">
+    <value>OECF</value>
+  </data>
+  <data name="Ver.Text" xml:space="preserve">
+    <value>Ver</value>
+  </data>
+  <data name="DTOrig.Text" xml:space="preserve">
+    <value>DTOrig</value>
+  </data>
+  <data name="DTDigitized.Text" xml:space="preserve">
+    <value>DTDigitized</value>
+  </data>
+  <data name="CompConfig.Text" xml:space="preserve">
+    <value>CompConfig</value>
+  </data>
+  <data name="CompBPP.Text" xml:space="preserve">
+    <value>CompBPP</value>
+  </data>
+  <data name="ShutterSpeed.Text" xml:space="preserve">
+    <value>ShutterSpeed</value>
+  </data>
+  <data name="Aperture.Text" xml:space="preserve">
+    <value>Aperture</value>
+  </data>
+  <data name="Brightness.Text" xml:space="preserve">
+    <value>Brightness</value>
+  </data>
+  <data name="ExposureBias.Text" xml:space="preserve">
+    <value>ExposureBias</value>
+  </data>
+  <data name="MaxAperture.Text" xml:space="preserve">
+    <value>MaxAperture</value>
+  </data>
+  <data name="SubjectDist.Text" xml:space="preserve">
+    <value>SubjectDist</value>
+  </data>
+  <data name="MeteringMode.Text" xml:space="preserve">
+    <value>MeteringMode</value>
+  </data>
+  <data name="LightSource.Text" xml:space="preserve">
+    <value>LightSource.Text</value>
+  </data>
+  <data name="Flash.Text" xml:space="preserve">
+    <value>Flash</value>
+  </data>
+  <data name="FocalLength.Text" xml:space="preserve">
+    <value>FocalLength</value>
+  </data>
+  <data name="MakerNote.Text" xml:space="preserve">
+    <value>MakerNote</value>
+  </data>
+  <data name="UserComment.Text" xml:space="preserve">
+    <value>UserComment</value>
+  </data>
+  <data name="DTSubsec.Text" xml:space="preserve">
+    <value>DTSubsec</value>
+  </data>
+  <data name="DTOrigSS.Text" xml:space="preserve">
+    <value>DTOrigSS</value>
+  </data>
+  <data name="DTDigSS.Text" xml:space="preserve">
+    <value>DTDigSS</value>
+  </data>
+  <data name="FPXVer.Text" xml:space="preserve">
+    <value>FPXVer</value>
+  </data>
+  <data name="ColorSpace.Text" xml:space="preserve">
+    <value>ColorSpace</value>
+  </data>
+  <data name="PixXDim.Text" xml:space="preserve">
+    <value>PixXDim</value>
+  </data>
+  <data name="PixYDim.Text" xml:space="preserve">
+    <value>PixYDim</value>
+  </data>
+  <data name="RelatedWav.Text" xml:space="preserve">
+    <value>RelatedWav</value>
+  </data>
+  <data name="Interop.Text" xml:space="preserve">
+    <value>Interop</value>
+  </data>
+  <data name="FlashEnergy.Text" xml:space="preserve">
+    <value>FlashEnergy</value>
+  </data>
+  <data name="SpatialFR.Text" xml:space="preserve">
+    <value>SpatialFR</value>
+  </data>
+  <data name="FocalXRes.Text" xml:space="preserve">
+    <value>FocalXRes</value>
+  </data>
+  <data name="FocalYRes.Text" xml:space="preserve">
+    <value>FocalYRes</value>
+  </data>
+  <data name="LocalResUnit.Text" xml:space="preserve">
+    <value>LocalResUnit</value>
+  </data>
+  <data name="SubjectLoc.Text" xml:space="preserve">
+    <value>SubjectLoc</value>
+  </data>
+  <data name="ExposureIndex.Text" xml:space="preserve">
+    <value>ExposureIndex</value>
+  </data>
+  <data name="SensingMethod.Text" xml:space="preserve">
+    <value>SensingMethod</value>
+  </data>
+  <data name="FileSource.Text" xml:space="preserve">
+    <value>FileSource</value>
+  </data>
+  <data name="SceneType.Text" xml:space="preserve">
+    <value>SceneType</value>
+  </data>
+  <data name="CfaPattern.Text" xml:space="preserve">
+    <value>CfaPattern.Text</value>
+  </data>
+  <data name="GPSLatitudeRef.Help" xml:space="preserve">
+    <value>Indicates whether the latitude is north or south latitude. 
+		The ASCII value 'N' indicates north latitude, and 'S' is south latitude.</value>
+  </data>
+  <data name="GPSLatitude.Help" xml:space="preserve">
+    <value>Indicates the latitude. The latitude is expressed as three 
+		RATIONAL values giving the degrees, minutes, and seconds, respectively. 
+		When degrees, minutes and seconds are expressed, the format is dd/1,mm/1,ss/1. 
+		When degrees and minutes are used and, for example, fractions of minutes are 
+		given up to two decimal places, the format is dd/1,mmmm/100,0/1.</value>
+  </data>
+  <data name="GPSLongitudeRef.Help" xml:space="preserve">
+    <value>Indicates whether the longitude is east or west longitude. 
+		The ASCII value 'E' indicates east longitude, and 'W' is west longitude.</value>
+  </data>
+  <data name="GPSLongitude.Help" xml:space="preserve">
+    <value>Indicates the longitude. The longitude is expressed as three 
+		RATIONAL values giving the degrees, minutes, and seconds, respectively. 
+		When degrees, minutes and seconds are expressed, the format is ddd/1,mm/1,ss/1. 
+		When degrees and minutes are used and, for example, fractions of minutes are 
+		given up to two decimal places, the format is ddd/1,mmmm/100,0/1.</value>
+  </data>
+  <data name="GPSAltitudeRef.Help" xml:space="preserve">
+    <value>Reference altitude, in meters.</value>
+  </data>
+  <data name="GPSAltitude.Help" xml:space="preserve">
+    <value>Altitude, in meters, based on the reference altitude specified by GpsAltitudeRef.</value>
+  </data>
+  <data name="GPSTimeStamp.Help" xml:space="preserve">
+    <value>Time as coordinated universal time (UTC). 
+		The value is expressed as three rational numbers that give the hour, minute, and second.</value>
+  </data>
+  <data name="GpsSatellites.Help" xml:space="preserve">
+    <value>Specifies the GPS satellites used for measurements. 
+		This tag can be used to specify the ID number, angle of elevation, 
+		azimuth, SNR, and other information about each satellite. 
+		The format is not specified. 
+		If the GPS receiver is incapable of taking measurements, 
+		the value of the tag must be set to NULL.</value>
+  </data>
+  <data name="GpsStatus.Help" xml:space="preserve">
+    <value>Specifies the status of the GPS receiver when the image is recorded. 
+		'A' means measurement is in progress, and 'V' means the measurement is Interoperability.</value>
+  </data>
+  <data name="GpsMeasureMode.Help" xml:space="preserve">
+    <value>Specifies the GPS measurement mode. 
+		2 specifies 2-D measurement, and 3 specifies 3-D measurement.</value>
+  </data>
+  <data name="GpsDop.Help" xml:space="preserve">
+    <value>GPS DOP (data degree of precision). 
+		An HDOP value is written during 2-D measurement, 
+		and a PDOP value is written during 3-D measurement.</value>
+  </data>
+  <data name="GPSSpeedRef.Help" xml:space="preserve">
+    <value>Specifies the unit used to express the GPS receiver speed of movement. 
+		K , M , and N represent kilometers per hour, miles per hour, and knots respectively.</value>
+  </data>
+  <data name="GPSSpeed.Help" xml:space="preserve">
+    <value>Speed of the GPS receiver movement.</value>
+  </data>
+  <data name="GPSTrackRef.Help" xml:space="preserve">
+    <value>Specifies the reference for giving the direction of GPS receiver movement. 
+		T specifies true direction, and M specifies magnetic direction.</value>
+  </data>
+  <data name="GPSTrack.Help" xml:space="preserve">
+    <value>Direction of GPS receiver movement. 
+		The range of values is from 0.00 to 359.99.</value>
+  </data>
+  <data name="GPSImgDirRef.Help" xml:space="preserve">
+    <value>Specifies the reference for the direction of the image when it is captured. 
+		T specifies true direction, and M specifies magnetic direction.</value>
+  </data>
+  <data name="GPSImgDir.Help" xml:space="preserve">
+    <value>Direction of the image when it was captured. 
+		The range of values is from 0.00 to 359.99.</value>
+  </data>
+  <data name="GPSMapDatum.Help" xml:space="preserve">
+    <value>Indicates the geodetic survey data used by the GPS receiver. 
+		If the survey data is restricted to Japan, the value of this tag is 'TOKYO' or 'WGS-84'.</value>
+  </data>
+  <data name="GPSDestLatRef.Help" xml:space="preserve">
+    <value>Specifies whether the latitude of the destination point is north or south latitude. 
+		N specifies north latitude, and S specifies south latitude.</value>
+  </data>
+  <data name="GPSDestLat.Help" xml:space="preserve">
+    <value>Latitude of the destination point. The latitude is expressed 
+		as three rational values giving the degrees, minutes, and seconds respectively. 
+		When degrees, minutes, and seconds are expressed, the format is dd/1, mm/1, ss/1. 
+		When degrees and minutes are used and, for example, fractions of minutes are 
+		given up to two decimal places, the format is dd/1, mmmm/100, 0/1.</value>
+  </data>
+  <data name="GPSDestLongRef.Help" xml:space="preserve">
+    <value>Specifies whether the longitude of the destination point is east or west longitude. 
+		E specifies east longitude, and W specifies west longitude.</value>
+  </data>
+  <data name="GPSDestLong.Help" xml:space="preserve">
+    <value>Longitude of the destination point. The longitude is expressed as 
+		three rational values giving the degrees, minutes, and seconds respectively. 
+		When degrees, minutes, and seconds are expressed, the format is ddd/1, mm/1, ss/1. 
+		When degrees and minutes are used and, for example, fractions of minutes are given up 
+		to two decimal places, the format is ddd/1, mmmm/100, 0/1.</value>
+  </data>
+  <data name="GPSDestBearRef.Help" xml:space="preserve">
+    <value>Specifies the reference used for giving the bearing to the destination point. 
+		T specifies true direction, and M specifies magnetic direction.</value>
+  </data>
+  <data name="GPSDestBear.Help" xml:space="preserve">
+    <value>Bearing to the destination point. 
+		The range of values is from 0.00 to 359.99.</value>
+  </data>
+  <data name="GPSDestDistRef.Help" xml:space="preserve">
+    <value>Specifies the unit used to express the distance to the destination point. 
+		'K', 'M', and 'N' represent kilometers, miles, and knots respectively.</value>
+  </data>
+  <data name="GPSDestDist.Help" xml:space="preserve">
+    <value>Distance to the destination point.</value>
+  </data>
+  <data name="NewSubfileType.Help" xml:space="preserve">
+    <value>Type of data in a subfile.</value>
+  </data>
+  <data name="SubfileType.Help" xml:space="preserve">
+    <value>Type of data in a subfile.</value>
+  </data>
+  <data name="ImageWidth.Help" xml:space="preserve">
+    <value>Number of pixels per row.</value>
+  </data>
+  <data name="BitsPerSample.Help" xml:space="preserve">
+    <value>Number of bits per color component.</value>
+  </data>
+  <data name="Compression.Help" xml:space="preserve">
+    <value>Compression scheme used for the image data.</value>
+  </data>
+  <data name="PhotometricInterp.Help" xml:space="preserve">
+    <value>How pixel data will be interpreted.</value>
+  </data>
+  <data name="ThreshHolding.Help" xml:space="preserve">
+    <value>Technique used to convert from gray pixels to black and white pixels.</value>
+  </data>
+  <data name="CellWidth.Help" xml:space="preserve">
+    <value>Width of the dithering or halftoning matrix.</value>
+  </data>
+  <data name="CellHeight.Help" xml:space="preserve">
+    <value>Height of the dithering or halftoning matrix.</value>
+  </data>
+  <data name="FillOrder.Help" xml:space="preserve">
+    <value>Logical order of bits in a byte.</value>
+  </data>
+  <data name="DocumentName.Help" xml:space="preserve">
+    <value>Null-terminated character string that specifies the name of the document from which the image was scanned.</value>
+  </data>
+  <data name="ImageDescription.Help" xml:space="preserve">
+    <value>Null-terminated character string that specifies the title of the image.</value>
+  </data>
+  <data name="StripOffsets.Help" xml:space="preserve">
+    <value>For each strip, the byte offset of that strip.</value>
+  </data>
+  <data name="Orientation.Help" xml:space="preserve">
+    <value>Image orientation viewed in terms of rows and columns.</value>
+  </data>
+  <data name="SamplesPerPixel.Help" xml:space="preserve">
+    <value>Number of color components per pixel.</value>
+  </data>
+  <data name="RowsPerStrip.Help" xml:space="preserve">
+    <value>Number of rows per strip.</value>
+  </data>
+  <data name="StripBytesCount.Help" xml:space="preserve">
+    <value>For each strip, the total number of bytes in that strip.</value>
+  </data>
+  <data name="MinSampleValue.Help" xml:space="preserve">
+    <value>For each color component, the minimum value assigned to that component.</value>
+  </data>
+  <data name="MaxSampleValue.Help" xml:space="preserve">
+    <value>For each color component, the maximum value assigned to that component.</value>
+  </data>
+  <data name="XResolution.Help" xml:space="preserve">
+    <value>Number of pixels per unit in the image width (x) direction. The unit is specified by ResolutionUnit.</value>
+  </data>
+  <data name="YResolution.Help" xml:space="preserve">
+    <value>Number of pixels per unit in the image height (y) direction. The unit is specified by ResolutionUnit.</value>
+  </data>
+  <data name="PlanarConfig.Help" xml:space="preserve">
+    <value>Whether pixel components are recorded in chunky or planar format.</value>
+  </data>
+  <data name="PageName.Help" xml:space="preserve">
+    <value>Null-terminated character string that specifies the name of the page from which the image was scanned.</value>
+  </data>
+  <data name="XPosition.Help" xml:space="preserve">
+    <value>Offset from the left side of the page to the left side of the image. The unit of measure is specified by ResolutionUnit.</value>
+  </data>
+  <data name="YPosition.Help" xml:space="preserve">
+    <value>Offset from the top of the page to the top of the image. The unit of measure is specified by ResolutionUnit.</value>
+  </data>
+  <data name="FreeOffset.Help" xml:space="preserve">
+    <value>For each string of contiguous unused bytes, the byte offset of that string.</value>
+  </data>
+  <data name="FreeByteCounts.Help" xml:space="preserve">
+    <value>For each string of contiguous unused bytes, the number of bytes in that string.</value>
+  </data>
+  <data name="GrayResponseUnit.Help" xml:space="preserve">
+    <value>Precision of the number specified by GrayResponseCurve. 1 specifies tenths, 2 specifies hundredths, 3 specifies thousandths, and so on.</value>
+  </data>
+  <data name="GrayResponseCurve.Help" xml:space="preserve">
+    <value>For each possible pixel value in a grayscale image, the optical density of that pixel value.</value>
+  </data>
+  <data name="T4Option.Help" xml:space="preserve">
+    <value>Set of flags that relate to T4 encoding.</value>
+  </data>
+  <data name="T6Option.Help" xml:space="preserve">
+    <value>Set of flags that relate to T6 encoding.</value>
+  </data>
+  <data name="ResolutionUnit.Help" xml:space="preserve">
+    <value>Unit of measure for the horizontal resolution and the vertical resolution.</value>
+  </data>
+  <data name="PageNumber.Help" xml:space="preserve">
+    <value>Page number of the page from which the image was scanned.</value>
+  </data>
+  <data name="TransferFunction.Help" xml:space="preserve">
+    <value>Tables that specify transfer functions for the image.</value>
+  </data>
+  <data name="SoftwareUsed.Help" xml:space="preserve">
+    <value>Null-terminated character string that specifies the name and version of the software or firmware of the device used to generate the image.</value>
+  </data>
+  <data name="DateTime.Help" xml:space="preserve">
+    <value>Date and time the image was created.</value>
+  </data>
+  <data name="HostComputer.Help" xml:space="preserve">
+    <value>Null-terminated character string that specifies the computer and/or operating system used to create the image.</value>
+  </data>
+  <data name="Predictor.Help" xml:space="preserve">
+    <value>Type of prediction scheme that was applied to the image data before the encoding scheme was applied.</value>
+  </data>
+  <data name="WhitePoint.Help" xml:space="preserve">
+    <value>Chromaticity of the white point of the image.</value>
+  </data>
+  <data name="PrimaryChromaticities.Help" xml:space="preserve">
+    <value>For each of the three primary colors in the image, the chromaticity of that color.</value>
+  </data>
+  <data name="ColorMap.Help" xml:space="preserve">
+    <value>Color palette (lookup table) for a palette-indexed image.</value>
+  </data>
+  <data name="HalftoneHints.Help" xml:space="preserve">
+    <value>Information used by the halftone function</value>
+  </data>
+  <data name="TileWidth.Help" xml:space="preserve">
+    <value>Number of pixel columns in each tile.</value>
+  </data>
+  <data name="TileLength.Help" xml:space="preserve">
+    <value>Number of pixel rows in each tile.</value>
+  </data>
+  <data name="TileOffset.Help" xml:space="preserve">
+    <value>For each tile, the byte offset of that tile.</value>
+  </data>
+  <data name="TileByteCounts.Help" xml:space="preserve">
+    <value>For each tile, the number of bytes in that tile.</value>
+  </data>
+  <data name="InkSet.Help" xml:space="preserve">
+    <value>Set of inks used in a separated image.</value>
+  </data>
+  <data name="InkNames.Help" xml:space="preserve">
+    <value>Sequence of concatenated, null-terminated, character strings that specify the names of the inks used in a separated image.</value>
+  </data>
+  <data name="NumberOfInks.Help" xml:space="preserve">
+    <value>Number of inks.</value>
+  </data>
+  <data name="DotRange.Help" xml:space="preserve">
+    <value>Color component values that correspond to a 0 percent dot and a 100 percent dot.</value>
+  </data>
+  <data name="TargetPrinter.Help" xml:space="preserve">
+    <value>Null-terminated character string that describes the intended printing environment.</value>
+  </data>
+  <data name="ExtraSamples.Help" xml:space="preserve">
+    <value>Number of extra color components. For example, one extra component might hold an alpha value.</value>
+  </data>
+  <data name="SampleFormat.Help" xml:space="preserve">
+    <value>For each color component, the numerical format (unsigned, signed, floating point) of that component.</value>
+  </data>
+  <data name="SMinSampleValue.Help" xml:space="preserve">
+    <value>For each color component, the minimum value of that component.</value>
+  </data>
+  <data name="SMaxSampleValue.Help" xml:space="preserve">
+    <value>For each color component, the maximum value of that component.</value>
+  </data>
+  <data name="TransferRange.Help" xml:space="preserve">
+    <value>Table of values that extends the range of the transfer function.</value>
+  </data>
+  <data name="Proc.Help" xml:space="preserve">
+    <value>JPEG compression process.</value>
+  </data>
+  <data name="InterFormat.Help" xml:space="preserve">
+    <value>Offset to the start of a JPEG bitstream.</value>
+  </data>
+  <data name="InterLength.Help" xml:space="preserve">
+    <value>Length, in bytes, of the JPEG bitstream.</value>
+  </data>
+  <data name="RestartInterval.Help" xml:space="preserve">
+    <value>Length of the restart interval.</value>
+  </data>
+  <data name="LosslessPredictors.Help" xml:space="preserve">
+    <value>For each color component, a lossless predictor-selection value for that component.</value>
+  </data>
+  <data name="PointTransforms.Help" xml:space="preserve">
+    <value>For each color component, a point transformation value for that component.</value>
+  </data>
+  <data name="QTables.Help" xml:space="preserve">
+    <value>For each color component, the offset to the quantization table for that component.</value>
+  </data>
+  <data name="DCTables.Help" xml:space="preserve">
+    <value>For each color component, the offset to the DC Huffman table (or lossless Huffman table) for that component.</value>
+  </data>
+  <data name="ACTables.Help" xml:space="preserve">
+    <value>For each color component, the offset to the AC Huffman table for that component.</value>
+  </data>
+  <data name="YCbCrCoefficients.Help" xml:space="preserve">
+    <value>Coefficients for transformation from RGB to YCbCr image data.</value>
+  </data>
+  <data name="YCbCrSubsampling.Help" xml:space="preserve">
+    <value>Sampling ratio of chrominance components in relation to the luminance component.</value>
+  </data>
+  <data name="YCbCrPositioning.Help" xml:space="preserve">
+    <value>Position of chrominance components in relation to the luminance component.</value>
+  </data>
+  <data name="REFBlackWhite.Help" xml:space="preserve">
+    <value>Reference black point value and reference white point value.</value>
+  </data>
+  <data name="Gamma.Help" xml:space="preserve">
+    <value>Gamma value attached to the image. The gamma value is stored as a rational number (pair of long) with a numerator of 100000. For example, a gamma value of 2.2 is stored as the pair (100000, 45455).</value>
+  </data>
+  <data name="ICCProfileDescriptor.Help" xml:space="preserve">
+    <value>Null-terminated character string that identifies an ICC profile.</value>
+  </data>
+  <data name="SRGBRenderingIntent.Help" xml:space="preserve">
+    <value>How the image should be displayed as defined by the International Color Consortium (ICC).</value>
+  </data>
+  <data name="ImageTitle.Help" xml:space="preserve">
+    <value>Null-terminated character string that specifies the title of the image.</value>
+  </data>
+  <data name="ResolutionXUnit.Help" xml:space="preserve">
+    <value>Units in which to display horizontal resolution.</value>
+  </data>
+  <data name="ResolutionYUnit.Help" xml:space="preserve">
+    <value>Units in which to display vertical resolution.</value>
+  </data>
+  <data name="ResolutionXLengthUnit.Help" xml:space="preserve">
+    <value>Units in which to display the image width.</value>
+  </data>
+  <data name="ResolutionYLengthUnit.Help" xml:space="preserve">
+    <value>Units in which to display the image height.</value>
+  </data>
+  <data name="PrintFlags.Help" xml:space="preserve">
+    <value>Sequence of one-byte Boolean values that specify printing options.</value>
+  </data>
+  <data name="PrintFlagsVersion.Help" xml:space="preserve">
+    <value>Print flags version.</value>
+  </data>
+  <data name="PrintFlagsCrop.Help" xml:space="preserve">
+    <value>Print flags center crop marks.</value>
+  </data>
+  <data name="PrintFlagsBleedWidth.Help" xml:space="preserve">
+    <value>Print flags bleed width.</value>
+  </data>
+  <data name="PrintFlagsBleedWidthScale.Help" xml:space="preserve">
+    <value>Print flags bleed width scale.</value>
+  </data>
+  <data name="HalftoneLPI.Help" xml:space="preserve">
+    <value>Ink's screen frequency, in lines per inch.</value>
+  </data>
+  <data name="HalftoneLPIUnit.Help" xml:space="preserve">
+    <value>Units for the screen frequency.</value>
+  </data>
+  <data name="HalftoneDegree.Help" xml:space="preserve">
+    <value>Angle for screen.</value>
+  </data>
+  <data name="HalftoneShape.Help" xml:space="preserve">
+    <value>Shape of the halftone dots.</value>
+  </data>
+  <data name="HalftoneMisc.Help" xml:space="preserve">
+    <value>Miscellaneous halftone information.</value>
+  </data>
+  <data name="HalftoneScreen.Help" xml:space="preserve">
+    <value>Boolean value that specifies whether to use the printer's default screens.</value>
+  </data>
+  <data name="JPEGQuality.Help" xml:space="preserve">
+    <value>Private tag used by the Adobe Photoshop format. Not for public use.</value>
+  </data>
+  <data name="GridSize.Help" xml:space="preserve">
+    <value>Block of information about grids and guides.</value>
+  </data>
+  <data name="Format.Help" xml:space="preserve">
+    <value>Format of the thumbnail image.</value>
+  </data>
+  <data name="Width.Help" xml:space="preserve">
+    <value>Width, in pixels, of the thumbnail image.</value>
+  </data>
+  <data name="Height.Help" xml:space="preserve">
+    <value>Height, in pixels, of the thumbnail image.</value>
+  </data>
+  <data name="ColorDepth.Help" xml:space="preserve">
+    <value>bits per pixel (BPP) for the thumbnail image.</value>
+  </data>
+  <data name="Planes.Help" xml:space="preserve">
+    <value>Number of color planes for the thumbnail image.</value>
+  </data>
+  <data name="RawBytes.Help" xml:space="preserve">
+    <value>Byte offset between rows of pixel data.</value>
+  </data>
+  <data name="Size.Help" xml:space="preserve">
+    <value>Total size, in bytes, of the thumbnail image.</value>
+  </data>
+  <data name="CompressedSize.Help" xml:space="preserve">
+    <value>Compressed size, in bytes, of the thumbnail image.</value>
+  </data>
+  <data name="ColorTransferFunction.Help" xml:space="preserve">
+    <value>Table of values that specify color transfer functions.</value>
+  </data>
+  <data name="EquipMake.Help" xml:space="preserve">
+    <value>Null-terminated character string that specifies the manufacturer of the equipment used to record the thumbnail image.</value>
+  </data>
+  <data name="EquipModel.Help" xml:space="preserve">
+    <value>Null-terminated character string that specifies the model name or model number of the equipment used to record the thumbnail image.</value>
+  </data>
+  <data name="ResolutionX.Help" xml:space="preserve">
+    <value>Thumbnail resolution in the width direction. The resolution unit is given in ThumbnailResolutionUnit.</value>
+  </data>
+  <data name="ResolutionY.Help" xml:space="preserve">
+    <value>Thumbnail resolution in the height direction. The resolution unit is given in ThumbnailResolutionUnit.</value>
+  </data>
+  <data name="Artist.Help" xml:space="preserve">
+    <value>Null-terminated character string that specifies the name of the person who created the thumbnail image.</value>
+  </data>
+  <data name="Copyright.Help" xml:space="preserve">
+    <value>Null-terminated character string that contains copyright information for the thumbnail image.</value>
+  </data>
+  <data name="LuminanceTable.Help" xml:space="preserve">
+    <value>Luminance table. The luminance table and the chrominance table are used to control JPEG quality. A valid luminance or chrominance table has 64 entries of type Short. If an image has either a luminance table or a chrominance table, then it must have both tables.</value>
+  </data>
+  <data name="ChrominanceTable.Help" xml:space="preserve">
+    <value>Chrominance table. The luminance table and the chrominance table are used to control JPEG quality. A valid luminance or chrominance table has 64 entries of type Short. If an image has either a luminance table or a chrominance table, then it must have both tables.</value>
+  </data>
+  <data name="FrameDelay.Help" xml:space="preserve">
+    <value>Time delay, in hundredths of a second, between two frames in an animated GIF image.</value>
+  </data>
+  <data name="LoopCount.Help" xml:space="preserve">
+    <value>For an animated GIF image, the number of times to display the animation. A value of 0 specifies that the animation should be displayed infinitely.</value>
+  </data>
+  <data name="PixelUnit.Help" xml:space="preserve">
+    <value>Unit for PixelPerUnitX and PixelPerUnitY.</value>
+  </data>
+  <data name="PixelPerUnitX.Help" xml:space="preserve">
+    <value>Pixels per unit in the x direction.</value>
+  </data>
+  <data name="PixelPerUnitY.Help" xml:space="preserve">
+    <value>Pixels per unit in the y direction.</value>
+  </data>
+  <data name="PaletteHistogram.Help" xml:space="preserve">
+    <value>Palette histogram.</value>
+  </data>
+  <data name="ExposureTime.Help" xml:space="preserve">
+    <value>Exposure time, measured in seconds.</value>
+  </data>
+  <data name="FNumber.Help" xml:space="preserve">
+    <value>F number.</value>
+  </data>
+  <data name="IFD.Help" xml:space="preserve">
+    <value>Private tag used by GDI+. Not for public use. GDI+ uses this tag to locate Exif-specific information.</value>
+  </data>
+  <data name="ICCProfile.Help" xml:space="preserve">
+    <value>ICC profile embedded in the image.</value>
+  </data>
+  <data name="ExposureProg.Help" xml:space="preserve">
+    <value>Class of the program used by the camera to set exposure when the picture is taken.</value>
+  </data>
+  <data name="SpectralSense.Help" xml:space="preserve">
+    <value>Null-terminated character string that specifies the spectral sensitivity of each channel of the camera used. The string is compatible with the standard developed by the ASTM Technical Committee.</value>
+  </data>
+  <data name="GpsIFD.Help" xml:space="preserve">
+    <value>Offset to a block of GPS property items. Property items whose tags have the prefix Gps are stored in the GPS block. The GPS property items are defined in the EXIF specification. GDI+ uses this tag to locate GPS information, but GDI+ does not expose this tag for public use.</value>
+  </data>
+  <data name="ISOSpeed.Help" xml:space="preserve">
+    <value>ISO speed and ISO latitude of the camera or input device as specified in ISO 12232.</value>
+  </data>
+  <data name="OECF.Help" xml:space="preserve">
+    <value>Optoelectronic conversion function (OECF) specified in ISO 14524. The OECF is the relationship between the camera optical input and the image values.</value>
+  </data>
+  <data name="Ver.Help" xml:space="preserve">
+    <value>Version of the EXIF standard supported. Nonexistence of this field is taken to mean nonconformance to the standard. Conformance to the standard is indicated by recording 0210 as a 4-byte ASCII string. Because the type is Undefined, there is no NULL terminator.</value>
+  </data>
+  <data name="DTOrig.Help" xml:space="preserve">
+    <value>Date and time when the original image data was generated. For a DSC, the date and time when the picture was taken. The format is YYYY:MM:DD HH:MM:SS with time shown in 24-hour format and the date and time separated by one blank character (0x2000). The character string length is 20 bytes including the NULL terminator. When the field is empty, it is treated as unknown.</value>
+  </data>
+  <data name="DTDigitized.Help" xml:space="preserve">
+    <value>Date and time when the image was stored as digital data. If, for example, an image was captured by DSC and at the same time the file was recorded, then DateTimeOriginal and DateTimeDigitized will have the same contents. The format is YYYY:MM:DD HH:MM:SS with time shown in 24-hour format and the date and time separated by one blank character (0x2000). The character string length is 20 bytes including the NULL terminator. When the field is empty, it is treated as unknown.</value>
+  </data>
+  <data name="CompConfig.Help" xml:space="preserve">
+    <value>Information specific to compressed data. The channels of each component are arranged in order from the first component to the fourth. For uncompressed data, the data arrangement is given in the PhotometricInterp tag. However, because PhotometricInterp can only express the order of Y, Cb, and Cr, this tag is provided for cases when compressed data uses components other than Y, Cb, and Cr and to support other sequences.</value>
+  </data>
+  <data name="CompBPP.Help" xml:space="preserve">
+    <value>Information specific to compressed data. The compression mode used for a compressed image is indicated in unit BPP.</value>
+  </data>
+  <data name="ShutterSpeed.Help" xml:space="preserve">
+    <value>Shutter speed. The unit is the Additive System of Photographic Exposure (APEX) value.</value>
+  </data>
+  <data name="Aperture.Help" xml:space="preserve">
+    <value>Lens aperture. The unit is the Additive System of Photographic Exposure (APEX) value.</value>
+  </data>
+  <data name="Brightness.Help" xml:space="preserve">
+    <value>Brightness value. The unit is the Additive System of Photographic Exposure (APEX) value. Ordinarily it is given in the range of -99.99 to 99.99.</value>
+  </data>
+  <data name="ExposureBias.Help" xml:space="preserve">
+    <value>Exposure bias. The unit is the Additive System of Photographic Exposure (APEX) value. Ordinarily it is given in the range -99.99 to 99.99.</value>
+  </data>
+  <data name="MaxAperture.Help" xml:space="preserve">
+    <value>Smallest F number of the lens. The unit is the Additive System of Photographic Exposure (APEX) value. Ordinarily it is given in the range of 00.00 to 99.99, but it is not limited to this range.</value>
+  </data>
+  <data name="SubjectDist.Help" xml:space="preserve">
+    <value>Distance to the subject, measured in meters.</value>
+  </data>
+  <data name="MeteringMode.Help" xml:space="preserve">
+    <value>Metering mode.</value>
+  </data>
+  <data name="LightSource.Help" xml:space="preserve">
+    <value>Type of light source.</value>
+  </data>
+  <data name="Flash.Help" xml:space="preserve">
+    <value>Flash status. This tag is recorded when an image is taken using a strobe light (flash). Bit 0 indicates the flash firing status, and bits 1 and 2 indicate the flash return status.</value>
+  </data>
+  <data name="FocalLength.Help" xml:space="preserve">
+    <value>Actual focal length, in millimeters, of the lens. Conversion is not made to the focal length of a 35 millimeter film camera.</value>
+  </data>
+  <data name="MakerNote.Help" xml:space="preserve">
+    <value>Note tag. A tag used by manufacturers of EXIF writers to record information. The contents are up to the manufacturer and are often encrypted. Because of the extremely large size of this field (over 30,000 hexidecimal pairs for some cameras), it will not be displayed in the grid.</value>
+  </data>
+  <data name="UserComment.Help" xml:space="preserve">
+    <value>Comment tag. A tag used by EXIF users to write keywords or comments about the image besides those in ImageDescription and without the character-code limitations of the ImageDescription tag.</value>
+  </data>
+  <data name="DTSubsec.Help" xml:space="preserve">
+    <value>Null-terminated character string that specifies a fraction of a second for the DateTime tag.</value>
+  </data>
+  <data name="DTOrigSS.Help" xml:space="preserve">
+    <value>Null-terminated character string that specifies a fraction of a second for the ExifDTOrig tag.</value>
+  </data>
+  <data name="DTDigSS.Help" xml:space="preserve">
+    <value>Null-terminated character string that specifies a fraction of a second for the ExifDTDigitized tag.</value>
+  </data>
+  <data name="FPXVer.Help" xml:space="preserve">
+    <value>FlashPix format version supported by an FPXR file. If the FPXR function supports FlashPix format version 1.0, this is indicated similarly to ExifVer by recording 0100 as a 4-byte ASCII string. Because the type is Undefined, there is no NULL terminator.</value>
+  </data>
+  <data name="ColorSpace.Help" xml:space="preserve">
+    <value>Color space specifier. Normally sRGB (=1) is used to define the color space based on the PC monitor conditions and environment. If a color space other than sRGB is used, Uncalibrated (=0xFFFF) is set. Image data recorded as Uncalibrated can be treated as sRGB when it is converted to FlashPix.</value>
+  </data>
+  <data name="PixXDim.Help" xml:space="preserve">
+    <value>Information specific to compressed data. When a compressed file is recorded, the valid width of the meaningful image must be recorded in this tag, whether or not there is padding data or a restart marker. This tag should not exist in an uncompressed file.</value>
+  </data>
+  <data name="PixYDim.Help" xml:space="preserve">
+    <value>Information specific to compressed data. When a compressed file is recorded, the valid height of the meaningful image must be recorded in this tag whether or not there is padding data or a restart marker. This tag should not exist in an uncompressed file. Because data padding is unnecessary in the vertical direction, the number of lines recorded in this valid image height tag will be the same as that recorded in the SOF.</value>
+  </data>
+  <data name="RelatedWav.Help" xml:space="preserve">
+    <value>The name of an audio file related to the image data. The only relational information recorded is the EXIF audio file name and extension (an ASCII string that consists of 8 characters plus a period (.), plus 3 characters). The path is not recorded. When you use this tag, audio files must be recorded in conformance with the EXIF audio format. Writers can also store audio data within APP2 as FlashPix extension stream data.</value>
+  </data>
+  <data name="Interop.Help" xml:space="preserve">
+    <value>Offset to a block of property items that contain interoperability information.</value>
+  </data>
+  <data name="FlashEnergy.Help" xml:space="preserve">
+    <value>Strobe energy, in Beam Candle Power Seconds (BCPS), at the time the image was captured.</value>
+  </data>
+  <data name="SpatialFR.Help" xml:space="preserve">
+    <value>Camera or input device spatial frequency table and SFR values in the image width, image height, and diagonal direction, as specified in ISO 12233.</value>
+  </data>
+  <data name="FocalXRes.Help" xml:space="preserve">
+    <value>Number of pixels in the image width (x) direction per unit on the camera focal plane. The unit is specified in ExifFocalResUnit.</value>
+  </data>
+  <data name="FocalYRes.Help" xml:space="preserve">
+    <value>Number of pixels in the image height (y) direction per unit on the camera focal plane. The unit is specified in ExifFocalResUnit.</value>
+  </data>
+  <data name="LocalResUnit.Help" xml:space="preserve">
+    <value>Unit of measure for ExifFocalXRes and ExifFocalYRes.</value>
+  </data>
+  <data name="SubjectLoc.Help" xml:space="preserve">
+    <value>Location of the main subject in the scene. The value of this tag represents the pixel at the center of the main subject relative to the left edge. The first value indicates the column number, and the second value indicates the row number.</value>
+  </data>
+  <data name="ExposureIndex.Help" xml:space="preserve">
+    <value>Exposure index selected on the camera or input device at the time the image was captured.</value>
+  </data>
+  <data name="SensingMethod.Help" xml:space="preserve">
+    <value>Image sensor type on the camera or input device.</value>
+  </data>
+  <data name="FileSource.Help" xml:space="preserve">
+    <value>The image source. If a DSC recorded the image, the value of this tag is 3.</value>
+  </data>
+  <data name="SceneType.Help" xml:space="preserve">
+    <value>The type of scene. If a DSC recorded the image, the value of this tag must be set to 1, indicating that the image was directly photographed.</value>
+  </data>
+  <data name="CfaPattern.Help" xml:space="preserve">
+    <value>The color filter array (CFA) geometric pattern of the image sensor when a one-chip color area sensor is used. It does not apply to all sensing methods.</value>
+  </data>
+  <data name="FocalResUnit.Help" xml:space="preserve">
+    <value>Unit of measure for ExifFocalXRes and ExifFocalYRes.</value>
+  </data>
+  <data name="FocalResUnit.Text" xml:space="preserve">
+    <value>FocalResUnit</value>
+  </data>
+</root>
