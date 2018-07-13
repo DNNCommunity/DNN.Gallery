@@ -1,0 +1,136 @@
+﻿Test Cases for DotNetNuke Gallery Module version 04.04.00
+
+Create instance
+----------------------------------------
+Pre-Requisites:
+Logged in as admin.
+
+Steps:
+Add module instance to a page.
+
+Expected:
+1.Empty module in view. 
+2.Check Event Viewer that there no errors logged.
+
+Create Album
+----------------------------------------
+Pre-Requisites:
+1. Logged in as user with edit rights for the module instance.
+
+
+(A) Create an Album:
+Steps:
+1. Click on "Add Album" at the SolPart Menu of the module instance. This opens the "Edit Album" page.
+2. Enter a path, title, select one or more file Type.
+3. Update/save settings.
+4. User have no permission to the Gallery Configuration.
+
+Expected:
+1. Add Album Page is viewed .
+2. go to step 3.
+3. Album is added and Gallery is viewed with the new Album.
+4. The User (not admin or Gallery Owner) have not access to the Configuration section.
+5. No errors in Event Viewer logged.
+
+(B) Create Files to Album:
+Steps:
+1. Select Add Album from Gallery or SolPart Menu.
+2. Add one file to the Album and click on Upload Pending files.
+3. Add two or more files to the Album as singe file to the pending List and click the upload Pending files.
+4. Add a zip file with more then one file to the Album and upload the Pending Files.
+5. Click on cancel. Go to the album you added the files. 
+
+Expected:
+1. Edit Album page is viewed.
+2. File is added to the Album List.
+3. All files are added to the Album List.
+4. All files from the Zip are ectaracted and added as single file to the Album List.
+5. Gallery is viewed without errors, Each file in album can be viewed without errors.
+6. No errors viewed in the Event Viewer.
+
+Delete File from Album
+----------------------------------------
+
+Pre-Requisites:
+You have still the files uploaded to a album.  You are logged in as admin or the Gallery owner.
+
+Steps:
+1. Open Edit Album.
+2. Delete one file from the Album list.
+3. Go back to the Gallery view.
+
+Expected:
+1. Edit Album opened without errors.
+2. File delited successful from the Album List.
+3. Gallery viewed with out errors, deleted file is not viewed.  Physical file is deleted from the Gallery folder in the Portal. 
+4. No errors viewed in the Event Log.
+
+Download
+-------------------------------------
+
+Pre-Requisiites:
+Enable the Download and add a download role in he Configuration.
+
+Steps:
+1. Login as user in the Download role
+2. Go to a Album and try to download a file over the SolPart Menu.
+3. Login as user with out download role 
+4. Try to download a file from a album over the SolPart Menu.
+5. Logout
+6. Try to download a file from a album over the SolPart Menu as annonymous.
+
+Expected:
+1. Logged in as user with download permission.
+2. File succesful downloaded.
+3. Logged in as user without download permission.
+4. No access to the download feature over the SolPart Menu.
+5. Logged out.
+6. No access to the download feature over the SolPart Menu.
+7. No errors viewed in the Event Viewer
+
+Upload Permissions
+-------------------------------------
+
+Pre-Requisites:
+1. Add Edit permission to a role.
+2. Logged in as user with Edit Permission..
+
+Steps:
+1. Try to access the Gallery Configuration and Module Settings.
+2. Upload a file to a Album.
+3. Login as user without edit permission and try upload a file.
+4. Give unauthenticated Users Edit permissions.
+
+Expected:
+1. User have no access to the Configuartion and Module Settings.
+2. File uploaded successful and is viewed in the album without errors.
+3. User have no access to the upload feature.
+4. Unauthenticated users did not have access to the Module Setting, Gallery Configuration and Add Files and Albums.
+5. No errors logged in Event Viewer.
+
+Download Permissions
+-------------------------------------
+
+Pre-Requisites:
+1. Login as admin and enable download in the Gallery configuration.
+2. Add a Role with download permission (registered users) to the Download Roles
+
+
+Steps:
+1. Login as user with download permission. Go to a album try to download a file over he GalleryMenu.
+2. Login as user with no download permission and try to download a file over the GalleryMenu.
+3. Give unauthenticationus users download permission in the Gallery configuration.
+4. Go to a album as unauthenticated user and try to download a file over the GalleryMenu.
+
+Expected:
+1. User with download permission can download a file with out errors.
+2. Users w/o download permission have no access to the download of a file.
+3. Unauthenticated users have now access to the download.
+4. Unauthentificated users can download a file without errors.
+5. No errors on checking the Event Viewer.
+
+Other Tests
+------------------------------------
+1. If time permits, verify that each of the issues listed are fixed in the 04.04.00 release notes
+are actually fixed in the release package.
+2. Also verify that the enhancements of configuration of initial album and slideshow pause on hover are working.

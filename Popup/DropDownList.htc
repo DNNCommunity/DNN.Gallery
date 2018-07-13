@@ -1,0 +1,264 @@
+<public:component lightweight="true">
+<public:attach event="oncontentready"	onevent="pageLoad()"/>
+<public:attach event="onmouseup"		onevent="mouseUp()"/>
+<public:attach event="onkeydown"		onevent="keyDown()"/>
+<public:method name="popupEnable"/>
+<public:method name="popupOnClick"/>
+<public:property id="returnValueProperty" name="returnValue"/>
+
+<script type="text/javascript" >
+var objTable;
+var objDropdown;
+var objPopup;
+var isOpen = false;
+
+function pageLoad()
+{	
+	innerHTML = renderList()	
+	var i = 0;
+	var rowCount = children[1].rows.length;
+
+	while (i < rowCount)
+	{
+		if (children[1].rows[i].cells[0].val == value) break;
+		i++;
+	}
+	
+	if (i >= rowCount)
+	{		
+		i = 0 	
+	}
+	
+	objDropdown = firstChild.rows[0].cells[0].firstChild;	
+	objDropdown.value = children[1].rows[i].cells[0].innerText;
+	objDropdown.returnValue = children[1].rows[i].cells[0].val;	
+	
+	objDropdown.defaultValue	= objDropdown.returnValue;
+	objDropdown.rowNum			= getValueIndex(objDropdown.returnValue);
+	objDropdown.htc			= this;
+	
+}
+
+function renderList()
+{
+	var strHTML = "<table style='table-layout:fixed;width:100%;'><col><col width='18'><tr><td><input type='sel'";
+	strHTML += " onselectstart='false' class='selectBox' onfocus=\"runtimeStyle.backgroundColor='#abc0e7';\" onblur=\"runtimeStyle.backgroundColor='';\" lastValue=\"" + value + "\" returnValue=\"" + value + "\" name=\"" + name + "\"></td><td><img onmouseover=\"src='Images/selectOn.gif';\" onmouseout=\"src='Images/selectOff.gif';\" style='cursor:hand;' align='absmiddle' src='Images/selectOff.gif'></td></tr></table>" + innerHTML;
+	return strHTML
+}
+
+function getValueIndex(strInput)
+{
+	var objRows = this.children[1].rows;
+	for (var i = 0; i < objRows.length; i++)
+	{
+		if (objRows[i].cells[0].val == strInput)
+		{
+			return i;
+		}
+	}	
+}
+
+function mouseUp()
+{
+	objDropdown.focus();
+
+	if (!isOpen)
+	{
+		listDropdown();
+		focus();
+	}
+
+	isOpen = !isOpen;
+}
+
+
+function closeDropdown()
+{
+	isOpen = false;	
+	try
+	{
+		objPopup.hide();
+		objDropdown.focus();		
+		renderBackground(objDropdown,objTable.rows[objDropdown.rowNum]);
+		
+	}
+	catch (e)
+	{
+		return false;
+	}
+}
+
+function listDropdown()
+{	
+	var lstHeight;
+	objDropdown.rowNum = getValueIndex(objDropdown.returnValue);		
+	objPopup = openPopup();
+	
+	var objColumn = element.document.createElement("COL");
+	with (objColumn.style) 
+	
+	{
+		paddingLeft	= "5px";
+		cursor		= "default";
+		fontSize	= "11px";
+		fontFamily	= "Tahoma, Verdana, Arial";
+	}
+	
+	with (children[1]) 
+	{
+		firstChild.insertBefore(objColumn);
+		onmouseover		= "this.box.popupEnable(event);";
+		onselectstart	= "return false;";
+		onclick			= "this.box.popupOnClick(event);";
+		style.width		= "100%";
+	}
+	
+	if (children[1].rows.length <= 6) lstHeight = (children[1].rows.length * 17) + 2;
+	objPopup.document.body.innerHTML = "<span style='width:100%; height:" + lstHeight + "px; border:1px solid #000000; overflow-y:auto; overflow-x:hidden;'>" + children[1].outerHTML + "</span>";
+
+	objTable = objPopup.document.body.firstChild.firstChild;
+	objTable.style.display = "inline";
+	objTable.box = this;
+	
+	var objRows = objTable.rows;
+	for (var i = 0; i < objRows.length; i++)
+	{
+		renderBackground(null, objRows[i]);
+	}		
+	renderBackground(objTable.rows[objDropdown.rowNum], null);	
+
+	objPopup.show(0, 19, clientWidth, lstHeight, firstChild);
+	
+	var topIndex;
+	topIndex = objDropdown.rowNum;	
+	
+	var span = objPopup.document.body.firstChild;	
+	span.scrollTop = span.firstChild.firstChild.children[topIndex].offsetTop;
+}
+
+function popupEnable(obj)
+{
+	obj = obj.srcElement.parentElement;	
+	renderBackground(obj,objTable.rows[objDropdown.rowNum]);
+	objDropdown.rowNum = obj.rowIndex;
+	
+}
+
+function popupOnClick(obj)
+{
+	if (obj.srcElement.parentElement.rowIndex >= 0)
+	{
+		objDropdown.rowNum = obj.srcElement.parentElement.rowIndex;
+		setValues(objDropdown.rowNum);
+		closeDropdown();
+	}
+}
+
+function getNextItems(strInput)
+{	
+	var returnValue = new Object();	
+	
+	returnValue.previousIndex = objDropdown.rowNum - 1;
+	returnValue.nextIndex     = objDropdown.rowNum + 1;
+	
+	if (returnValue.previousIndex < 0)
+	{
+		returnValue.previousIndex = 0;
+		returnValue.nextIndex = (objTable.rows.length > 1) ? 1 : 0;
+	}
+	else if (returnValue.nextIndex >= objTable.rows.length)
+	{
+		returnValue.nextIndex = objTable.rows.length - 1;
+		returnValue.previousIndex = (objTable.rows.length > 1) ? returnValue.nextIndex - 1 : returnValue.nextIndex;
+	}
+
+	return returnValue;
+}
+
+
+function keyDown()
+{
+	var key = event.keyCode;	
+	if (key == 9 && isOpen)
+	{		
+		objDropdown.focus();
+		return;
+	}	
+
+	switch (key)
+	{
+		case 38:			
+			objReturn = getNextItems(objDropdown.returnValue);
+
+			if (objReturn.previousIndex == objDropdown.rowNum)
+			{
+				break; 
+			}
+
+			var previousItem;			
+			previousItem = objTable.rows[objDropdown.rowNum];			
+
+			var newItem = objTable.rows[objReturn.previousIndex];
+			newItem.scrollIntoView();			
+			renderBackground(newItem, previousItem);			
+			setValues(objReturn.previousIndex);	
+
+			break;
+
+		case 40:			
+			objReturn = getNextItems(objDropdown.returnValue);
+
+			if (objReturn.nextIndex == objDropdown.rowNum)
+			{				
+				break;
+			}
+
+			var previousItem;			
+			previousItem = objTable.rows[objDropdown.rowNum];			
+
+			var newItem = objTable.rows[objReturn.nextIndex];
+			newItem.scrollIntoView();			
+			renderBackground(newItem, previousItem);			
+			setValues(objReturn.nextIndex);
+			
+			break;
+
+		case 13:
+			closeDropdown();
+			break;
+	}
+	
+	event.cancelBubble = true;
+	event.returnValue = false;
+}
+
+function setValues(selectedIndex)
+{
+	with (element.children[1].rows[selectedIndex].cells[0])
+	{
+		objDropdown.lastValue = objDropdown.returnValue;
+		objDropdown.value = innerText;
+		objDropdown.returnValue = val;
+		objDropdown.rowNum = selectedIndex;
+	}	
+}
+
+
+function renderBackground(focusItem, nonfocusItem)
+{	
+	if (focusItem != nonfocusItem)
+	{
+		if (focusItem != null)
+		{
+			focusItem.runtimeStyle.backgroundColor = "#abc0e7";
+		}
+
+		if (nonfocusItem != null)
+		{
+			nonfocusItem.runtimeStyle.backgroundColor = "";
+		}
+	}
+}
+
+</script>
+</public:component>

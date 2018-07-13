@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Name.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Author.Text" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="Client.Text" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Location.Text" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="CreatedDate.Text" xml:space="preserve">
+    <value>Created Date</value>
+  </data>
+  <data name="ApprovedDate.Text" xml:space="preserve">
+    <value>Approved Date</value>
+  </data>
+  <data name="Items.Text" xml:space="preserve">
+    <value>Items</value>
+  </data>
+  <data name="Next.Text" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="Previous.Text" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="MenuEdit.Text" xml:space="preserve">
+    <value>Edit this Album</value>
+  </data>
+  <data name="MenuAddFile.Text" xml:space="preserve">
+    <value>Add Files</value>
+  </data>
+  <data name="MenuAddAlbum.Text" xml:space="preserve">
+    <value>Add Album</value>
+  </data>
+  <data name="MenuMaintenance.Text" xml:space="preserve">
+    <value>Maintenance</value>
+  </data>
+  <data name="Page.Text" xml:space="preserve">
+    <value>Page:</value>
+  </data>
+  <data name="AlbumEmpty.Text" xml:space="preserve">
+    <value>Album Contains No Files</value>
+  </data>
+  <data name="Voting.Text" xml:space="preserve">
+    <value>Vote</value>
+  </data>
+  <data name="Open.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="VoteInfo.Text" xml:space="preserve">
+    <value>[VoteValue] out of 5 stars, based on [VoteCount] visitors</value>
+  </data>
+  <data name="AlbumSizeInfo.Text" xml:space="preserve">
+    <value>([ItemCount]&amp;nbsp;items)</value>
+  </data>
+  <data name="FileSizeInfo.Text" xml:space="preserve">
+    <value>([FileSize] KB)</value>
+  </data>
+  <data name="MovePrevious.Text" xml:space="preserve">
+    <value>Show previous image in the album</value>
+  </data>
+  <data name="MoveNext.Text" xml:space="preserve">
+    <value>Show next image in the album</value>
+  </data>
+  <data name="ZoomOut.Text" xml:space="preserve">
+    <value>Zoom out</value>
+  </data>
+  <data name="ZoomIn.Text" xml:space="preserve">
+    <value>Zoom in</value>
+  </data>
+  <data name="RotateLeft.Text" xml:space="preserve">
+    <value>Rotate 90º left</value>
+  </data>
+  <data name="RotateRight.Text" xml:space="preserve">
+    <value>Rotate 90º right</value>
+  </data>
+  <data name="FlipX.Text" xml:space="preserve">
+    <value>Flip horizontally</value>
+  </data>
+  <data name="FlipY.Text" xml:space="preserve">
+    <value>Flip vertically</value>
+  </data>
+  <data name="BWMinus.Text" xml:space="preserve">
+    <value>Less black...</value>
+  </data>
+  <data name="Color.Text" xml:space="preserve">
+    <value>Show in Color</value>
+  </data>
+  <data name="BWPlus.Text" xml:space="preserve">
+    <value>Show In Black</value>
+  </data>
+  <data name="Slideshow.Text" xml:space="preserve">
+    <value>Slideshow</value>
+  </data>
+  <data name="EXIFData.Text" xml:space="preserve">
+    <value>EXIF Data</value>
+  </data>
+  <data name="Download.Text" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="Edit.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="AddSubAlbum.Text" xml:space="preserve">
+    <value>Add Sub Album</value>
+  </data>
+  <data name="AddFile.Text" xml:space="preserve">
+    <value>Add File</value>
+  </data>
+  <data name="Maintenance.Text" xml:space="preserve">
+    <value>Maintenance</value>
+  </data>
+  <data name="ViewThread.Text" xml:space="preserve">
+    <value>View Thread</value>
+  </data>
+  <data name="Flash.Text" xml:space="preserve">
+    <value>Flash:</value>
+  </data>
+  <data name="Movie.Text" xml:space="preserve">
+    <value>Movie:</value>
+  </data>
+  <data name="Image.Text" xml:space="preserve">
+    <value>Image:</value>
+  </data>
+  <data name="MaxFileSize.Text" xml:space="preserve">
+    <value>Maximum Single  File Size:</value>
+  </data>
+  <data name="ViewListView.Text" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="ViewCardView.Text" xml:space="preserve">
+    <value>Card</value>
+  </data>
+  <data name="ViewStandard.Text" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="SortName.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="SortTitle.Text" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="SortSize.Text" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="SortAuthor.Text" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="SortLocation.Text" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="SortScore.Text" xml:space="preserve">
+    <value>Score</value>
+  </data>
+  <data name="SortOwnerID.Text" xml:space="preserve">
+    <value>OwnerID</value>
+  </data>
+  <data name="SortCreatedDate.Text" xml:space="preserve">
+    <value>Created Date</value>
+  </data>
+  <data name="SortApprovedDate.Text" xml:space="preserve">
+    <value>Approved Date</value>
+  </data>
+  <data name="UpdateButton.Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="UploadFile_InvalidExtension.Text" xml:space="preserve">
+    <value>{0} is not an acceptable file type</value>
+  </data>
+  <data name="UploadFile_InvalidFile.Text" xml:space="preserve">
+    <value>Invalid or non-exsistant file</value>
+  </data>
+  <data name="UploadFile_InvalidSize.Text" xml:space="preserve">
+    <value>File size (including that of each file in a zip folder) must be smaller than {0} kb</value>
+  </data>
+  <data name="MenuAddAlbum.Tooltip" xml:space="preserve">
+    <value>Add a new album at this location</value>
+  </data>
+  <data name="MenuAddFile.Tooltip" xml:space="preserve">
+    <value>Add new file(s) to this album</value>
+  </data>
+  <data name="MenuEdit.Tooltip" xml:space="preserve">
+    <value>Edit the current album</value>
+  </data>
+  <data name="MenuMaintenance.Tooltip" xml:space="preserve">
+    <value>Manage the items in this album</value>
+  </data>
+  <data name="Search_Find.Text" xml:space="preserve">
+    <value>Find:</value>
+  </data>
+  <data name="Search_Go.Text" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="Search_Go_info.Text" xml:space="preserve">
+    <value>Search the records</value>
+  </data>
+  <data name="Search_Lookup.Text" xml:space="preserve">
+    <value>Lookup:</value>
+  </data>
+  <data name="FlashCategories.Text" xml:space="preserve">
+    <value>Flash</value>
+  </data>
+  <data name="ImageCategories.Text" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="MovieCategories.Text" xml:space="preserve">
+    <value>Movie</value>
+  </data>
+  <data name="MusicCategories.Text" xml:space="preserve">
+    <value>Music</value>
+  </data>
+  <data name="Search.Text" xml:space="preserve">
+    <value>Search:</value>
+  </data>
+  <data name="NoRecordsFound.Text" xml:space="preserve">
+    <value>No records found ...</value>
+  </data>
+  <data name="Column_Full Name.Text" xml:space="preserve">
+    <value>Display  Name</value>
+  </data>
+  <data name="Column_Name.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Popup_Search.Text" xml:space="preserve">
+    <value>Search: </value>
+  </data>
+  <data name="btnDeleteAll.Help" xml:space="preserve">
+    <value>Delete selected files, including source &amp; thumbnail ...</value>
+  </data>
+  <data name="btnDeleteAll.ToolTip" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnSyncAll.Help" xml:space="preserve">
+    <value>Synchronize selected files ...</value>
+  </data>
+  <data name="btnSyncAll.ToolTip" xml:space="preserve">
+    <value>Synchronize</value>
+  </data>
+  <data name="Loading.Text" xml:space="preserve">
+    <value>Loading . . . Please Wait . . .</value>
+  </data>
+  <data name="MenuEditFile.Text" xml:space="preserve">
+    <value>Edit this File</value>
+  </data>
+  <data name="MenuEditFile.Tooltip" xml:space="preserve">
+    <value>Edit the current file</value>
+  </data>
+  <data name="btnClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Save_Confirm.Text" xml:space="preserve">
+    <value>Are you sure you wish to save the changes to this item?</value>
+  </data>
+  <data name="Configuration.Action" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="GalleryHome.Action" xml:space="preserve">
+    <value>Gallery Home</value>
+  </data>
+  <data name="Download.Tooltip" xml:space="preserve">
+    <value>Download this file</value>
+  </data>
+  <data name="EXIFData.Tooltip" xml:space="preserve">
+    <value>View EXIF data for this image</value>
+  </data>
+  <data name="Slideshow.Tooltip" xml:space="preserve">
+    <value>View a slideshow of images in this album</value>
+  </data>
+  <data name="Uploads_ExceedQuota.Text" xml:space="preserve">
+    <value>The available gallery space of {0:F} kb would be exceeded where these pending uploads to be committed. Remove one or more files from pending uploads and try again.</value>
+  </data>
+  <data name="No_Unauthenticated_Access.Text" xml:space="preserve">
+    <value>No album creation, or file/album editing is permitted for unauthenticated users. Please login.</value>
+  </data>
+  <data name="Gallery_Quota.Text" xml:space="preserve">
+    <value>Gallery Quota:</value>
+  </data>
+  <data name="Space_Used.Text" xml:space="preserve">
+    <value>Space Used:</value>
+  </data>
+  <data name="Space_Available.Text" xml:space="preserve">
+    <value>Space Available:</value>
+  </data>
+  <data name="cmdCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="cmdReturn.Text" xml:space="preserve">
+    <value>Return to Gallery</value>
+  </data>
+  <data name="No_Gallery_Quota_Imposed.Text" xml:space="preserve">
+    <value>No quota imposed by gallery owner</value>
+  </data>
+  <data name="Confirm_Cancel.Text" xml:space="preserve">
+    <value>Are you sure you want to cancel this operation and discard any changes pending?</value>
+  </data>
+  <data name="No_Quota_Imposed.Text" xml:space="preserve">
+    <value>No quota imposed by gallery owner or portal host</value>
+  </data>
+  <data name="No_Portal_Quota_Imposed.Text" xml:space="preserve">
+    <value>No quota imposed by the portal host</value>
+  </data>
+  <data name="Portal_Quota.Text" xml:space="preserve">
+    <value>Portal Quota:</value>
+  </data>
+  <data name="Space_Available_Exceeded_By.Text" xml:space="preserve">
+    <value>&lt;span style="color:red"&gt;EXCEEDED&lt;/span&gt; by {0:F} kb</value>
+  </data>
+  <data name="Insufficient_Delete_Permissions.Text" xml:space="preserve">
+    <value>You do not have sufficient permissions to delete this gallery object.</value>
+  </data>
+  <data name="Folder_Contains_Objects.Text" xml:space="preserve">
+    <value>A folder cannot be deleted until all sub-folders and files have been deleted from it.</value>
+  </data>
+  <data name="Insufficient_Edit_Permissions.Text" xml:space="preserve">
+    <value>You do not have sufficient permissions to edit this gallery object.</value>
+  </data>
+  <data name="Insufficient_Maintenance_Permissions.Text" xml:space="preserve">
+    <value>You do not have sufficient permissions to administer this gallery.</value>
+  </data>
+  <data name="Insufficient_Upload_Permissions.Text" xml:space="preserve">
+    <value>You do not have sufficient permissions to upload to this album or gallery.</value>
+  </data>
+  <data name="DNNRole.Text" xml:space="preserve">
+    <value>DNN Role</value>
+  </data>
+  <data name="DNNUser.Text" xml:space="preserve">
+    <value>DNN User</value>
+  </data>
+  <data name="FamilyCategories.Text" xml:space="preserve">
+    <value>Family</value>
+  </data>
+  <data name="PetsCategories.Text" xml:space="preserve">
+    <value>Pets</value>
+  </data>
+  <data name="ScenicsCategories.Text" xml:space="preserve">
+    <value>Scenics</value>
+  </data>
+  <data name="WorkCategories.Text" xml:space="preserve">
+    <value>Work</value>
+  </data>
+  <data name="btnBack.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="GetWindowsMediaPlayerPlugIn.Text" xml:space="preserve">
+    <value>Get Windows Media Player Plugin</value>
+  </data>
+  <data name="UploadFile_ProcessError.Text" xml:space="preserve">
+    <value>An error occured while attempting to process the uploaded file {0}</value>
+  </data>
+  <data name="UploadFile_OpenZipError.Text" xml:space="preserve">
+    <value>An error occured while attempting to open the uploaded zip archive file {0}</value>
+  </data>
+  <data name="UploadFile_UnZipError.Text" xml:space="preserve">
+    <value>An error occured while attempting to unzip file {0} from the uploaded archive</value>
+  </data>
+  <data name="UploadFile_ResizeSaveError.Text" xml:space="preserve">
+    <value>An error occured while attempting to resize and/or save the uploaded file {0}</value>
+  </data>
+  <data name="Description.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Size.Text" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="Title.Text" xml:space="preserve">
+    <value>Title</value>
+  </data>
+</root>

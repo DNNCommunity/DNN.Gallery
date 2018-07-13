@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdminSettings.Text" xml:space="preserve">
+    <value>Admin Settings</value>
+  </data>
+  <data name="GalleryConfiguration.Text" xml:space="preserve">
+    <value>Gallery Configuration</value>
+  </data>
+  <data name="plRootURL.Text" xml:space="preserve">
+    <value>Root Url:</value>
+  </data>
+  <data name="plRootURL.Help" xml:space="preserve">
+    <value>The portal home directory relative Url of the top-level gallery folder (ie. /DotNetNuke_2/Portals/0/Gallery/). Caution: Only change the Root Url after albums and/or files have been added if you are certain you know what your are doing as current gallery content will NOT be copied over to the new directory automatically.</value>
+  </data>
+  <data name="plSkin.Text" xml:space="preserve">
+    <value>Theme:</value>
+  </data>
+  <data name="plSkin.Help" xml:space="preserve">
+    <value>The theme that will be used for this gallery module.</value>
+  </data>
+  <data name="plQuota.Text" xml:space="preserve">
+    <value>Quota:</value>
+  </data>
+  <data name="plQuota.Help" xml:space="preserve">
+    <value>The disk space usage limit permitted by all files in a gallery.&lt;br /&gt;(In KB)&lt;br&gt;&lt;b&gt;Tip&lt;/b&gt;&lt;br /&gt;It is recommended that you limit the gallery size</value>
+  </data>
+  <data name="plMaxFileSize.Text" xml:space="preserve">
+    <value>Max File Size:</value>
+  </data>
+  <data name="plMaxFileSize.Help" xml:space="preserve">
+    <value>The maximum size (in kb) of a single file that may be uploaded.&lt;br /&gt;If you need to permit uploads of files larger than the lesser of the maxRequestLength or requestLengthDiskThreshold set in the httpRuntime section of the site's web.config, it will also be necessary to increase those limits and possibly the executionTimeout.&lt;br /&gt;&lt;b&gt;Tip&lt;/b&gt;&lt;br/&gt;It is recommended to keep this value relatively small to avoid long loading times for images.</value>
+  </data>
+  <data name="plAutoApproval.Text" xml:space="preserve">
+    <value>Auto Approval:</value>
+  </data>
+  <data name="plAutoApproval.Help" xml:space="preserve">
+    <value>If checked, file additions to a gallery are approved immediately and on display.&lt;br /&gt;&lt;b&gt;Tip&lt;/b&gt;&lt;br /&gt;Unapproved additions can only be accessed by a module administrator for approval via the Album Edit menu item.</value>
+  </data>
+  <data name="plBuildCacheOnStart.Text" xml:space="preserve">
+    <value>Build Cache On  Start:</value>
+  </data>
+  <data name="plBuildCacheOnStart.Help" xml:space="preserve">
+    <value>If checked, gallery will cache file and module configuration data.&lt;br /&gt;&lt;b&gt;Tip&lt;/b&gt;&lt;br /&gt;It is recommended to use this feature to enhance performance.</value>
+  </data>
+  <data name="plCategoryValues.Text" xml:space="preserve">
+    <value>Category Values:</value>
+  </data>
+  <data name="plCategoryValues.Help" xml:space="preserve">
+    <value>The values listed for categories in this gallery.</value>
+  </data>
+  <data name="DisplaySettings.Text" xml:space="preserve">
+    <value>Display Settings</value>
+  </data>
+  <data name="plGalleryTitle.Text" xml:space="preserve">
+    <value>Gallery Title:</value>
+  </data>
+  <data name="plGalleryTitle.Help" xml:space="preserve">
+    <value>The title of this gallery module.</value>
+  </data>
+  <data name="plImageExtensions.Text" xml:space="preserve">
+    <value>Image Extensions:</value>
+  </data>
+  <data name="plImageExtensions.Help" xml:space="preserve">
+    <value>File extensions for images that are permitted in this gallery.&lt;br /&gt;&lt;b&gt;Tip&lt;/b&gt;&lt;br /&gt;Limit image extension types to known image extensions that are compatible with the web.</value>
+  </data>
+  <data name="plMediaExtensions.Text" xml:space="preserve">
+    <value>Media Extensions:</value>
+  </data>
+  <data name="plMediaExtensions.Help" xml:space="preserve">
+    <value>File extensions for video that are permitted in this gallery.&lt;br /&gt;&lt;b&gt;Tip&lt;/b&gt;&lt;br /&gt;Limit video file extension types to those known compatible for web viewing.</value>
+  </data>
+  <data name="plDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="plDescription.Help" xml:space="preserve">
+    <value>A brief description of this gallery module.</value>
+  </data>
+  <data name="plFixedWidth.Text" xml:space="preserve">
+    <value>Max Fixed Width:</value>
+  </data>
+  <data name="plFixedWidth.Help" xml:space="preserve">
+    <value>Image width &lt;br /&gt;(In px). You must delete all albums and images from the gallery before changing this setting.</value>
+  </data>
+  <data name="plFixedHeight.Text" xml:space="preserve">
+    <value>Max Fixed Height:</value>
+  </data>
+  <data name="plFixedHeight.Help" xml:space="preserve">
+    <value>Image height &lt;br /&gt;(In px). You must delete all albums and images from the gallery before changing this setting.</value>
+  </data>
+  <data name="plStripWidth.Text" xml:space="preserve">
+    <value>Column Count:</value>
+  </data>
+  <data name="plStripWidth.Help" xml:space="preserve">
+    <value>The number of thumbnails permitted for display from left to right in a single row.</value>
+  </data>
+  <data name="plStripHeight.Text" xml:space="preserve">
+    <value>Row Count:</value>
+  </data>
+  <data name="plStripHeight.Help" xml:space="preserve">
+    <value>The number of thumbnails permitted for display from top to bottom in a single column.</value>
+  </data>
+  <data name="plMaxThumbWidth.Text" xml:space="preserve">
+    <value>Max Thumb Width:</value>
+  </data>
+  <data name="plMaxThumbWidth.Help" xml:space="preserve">
+    <value>Thumbnail frame width &lt;br /&gt;(In px). You must delete all albums and images from the gallery before changing this setting.</value>
+  </data>
+  <data name="plMaxThumbHeight.Text" xml:space="preserve">
+    <value>Max Thumb Height:</value>
+  </data>
+  <data name="plMaxThumbHeight.Help" xml:space="preserve">
+    <value>Thumbnail frame height &lt;br /&gt;(In px). You must delete all albums and images from the gallery before changing this setting.</value>
+  </data>
+  <data name="NumericValue.ErrorMessage" xml:space="preserve">
+    <value>Needs to be integer!</value>
+  </data>
+  <data name="plDisplay.Text" xml:space="preserve">
+    <value>Display Info:</value>
+  </data>
+  <data name="plDisplay.Help" xml:space="preserve">
+    <value>Information about each media item that will be displayed.</value>
+  </data>
+  <data name="plSortProperties.Text" xml:space="preserve">
+    <value>Sort Properties:</value>
+  </data>
+  <data name="plSortProperties.Help" xml:space="preserve">
+    <value>The properties which a user may sort a gallery by.</value>
+  </data>
+  <data name="plGallerySort.Text" xml:space="preserve">
+    <value>Default Sort:</value>
+  </data>
+  <data name="plGallerySort.Help" xml:space="preserve">
+    <value>The default property used to sort images in the gallery.&lt;br /&gt;Can be sorted ascending or descending.</value>
+  </data>
+  <data name="plGalleryView.Text" xml:space="preserve">
+    <value>Default View:</value>
+  </data>
+  <data name="plGalleryView.Help" xml:space="preserve">
+    <value>The default view a user will see when they enter the gallery.&lt;br /&gt;If visitors can change view is checked, this means the users are permitted to select their own view property.</value>
+  </data>
+  <data name="VisitorChangeView.Text" xml:space="preserve">
+    <value>Visitors can change view</value>
+  </data>
+  <data name="Descending.Text" xml:space="preserve">
+    <value>Descending</value>
+  </data>
+  <data name="FeatureSettings.Text" xml:space="preserve">
+    <value>Feature Settings</value>
+  </data>
+  <data name="plSlideshowSpeed.Text" xml:space="preserve">
+    <value>Slideshow Speed:</value>
+  </data>
+  <data name="plSlideshowSpeed.Help" xml:space="preserve">
+    <value>The speed the slideshow will move in milliseconds.</value>
+  </data>
+  <data name="plSlideshow.Text" xml:space="preserve">
+    <value>Enable Slideshow?</value>
+  </data>
+  <data name="plSlideshow.Help" xml:space="preserve">
+    <value>If checked, this enables the slideshow option.</value>
+  </data>
+  <data name="plPopup.Text" xml:space="preserve">
+    <value>Enable Popup?</value>
+  </data>
+  <data name="plPopup.Help" xml:space="preserve">
+    <value>If checked, this enables the gallery popup viewer.&lt;br /&gt;If not, images will display in page.&lt;br /&gt;&lt;b&gt;Tip&lt;/b&gt;&lt;br /&gt;It is not known what popup blockers will block this feature.</value>
+  </data>
+  <data name="plMultiLevelMenu.Text" xml:space="preserve">
+    <value>Multi Level Navigation Menu?</value>
+  </data>
+  <data name="plMultiLevelMenu.Help" xml:space="preserve">
+    <value>All gallery hierarchy will be listed in module navigation menu.&lt;br /&gt;When disabled, only the current level is listed.</value>
+  </data>
+  <data name="plWatermark.Text" xml:space="preserve">
+    <value>Enable Watermark?</value>
+  </data>
+  <data name="plWatermark.Help" xml:space="preserve">
+    <value>If checked, this enables a watermark image for each album.&lt;br /&gt;&lt;b&gt;Tip&lt;/b&gt;&lt;br /&gt;Upload the file you want as a watermark to this gallery and name it watermark and it will mask all images in the an album with this image.&lt;br /&gt;Must be one in each album to use feature.</value>
+  </data>
+  <data name="plExif.Text" xml:space="preserve">
+    <value>Enable Exif?</value>
+  </data>
+  <data name="plExif.Help" xml:space="preserve">
+    <value>If checked, enables users to view picture Metadata.</value>
+  </data>
+  <data name="plVoting.Text" xml:space="preserve">
+    <value>Enable Voting?</value>
+  </data>
+  <data name="plVoting.Help" xml:space="preserve">
+    <value>If checked, enables users to vote and comment on media.</value>
+  </data>
+  <data name="plDownload.Text" xml:space="preserve">
+    <value>Enable Download?</value>
+  </data>
+  <data name="plDownload.Help" xml:space="preserve">
+    <value>If checked, enables users to download gallery media.</value>
+  </data>
+  <data name="plDownloadRoles.Text" xml:space="preserve">
+    <value>Download Roles:</value>
+  </data>
+  <data name="plDownloadRoles.Help" xml:space="preserve">
+    <value>The portal roles which are permitted to download gallery media files.</value>
+  </data>
+  <data name="PrivateGallery.Text" xml:space="preserve">
+    <value>Private Gallery</value>
+  </data>
+  <data name="plPrivate.Text" xml:space="preserve">
+    <value>Is Private?</value>
+  </data>
+  <data name="plPrivate.Help" xml:space="preserve">
+    <value>If checked, only the gallery owner is permitted to add files and sub albums.  Any users who have view rights to the module can see the gallery contents that are approved.</value>
+  </data>
+  <data name="plOwnerLookup.Text" xml:space="preserve">
+    <value>Owner:</value>
+  </data>
+  <data name="plOwnerLookup.Help" xml:space="preserve">
+    <value>The owner of the Gallery.</value>
+  </data>
+  <data name="ModuleHelp.Text" xml:space="preserve">
+    <value>&lt;h1&gt;Gallery - Configuration&lt;/h1&gt;&lt;p&gt;All configuration of the module is handled here.  Please see help tips if a certain area is unclear to its meaning.&lt;/p&gt;</value>
+  </data>
+  <data name="ControlTitle_configuration.Text" xml:space="preserve">
+    <value>Gallery Configuration</value>
+  </data>
+  <data name="NumericValueGE25LE800.ErrorMessage" xml:space="preserve">
+    <value>Value must be integer &gt;= 25 and &lt;= 800!</value>
+  </data>
+  <data name="NumericValueGT0LE20.ErrorMessage" xml:space="preserve">
+    <value>Value must be integer &gt; 0 and &lt;=20!</value>
+  </data>
+  <data name="NumericValueGT0LE99.ErrorMessage" xml:space="preserve">
+    <value>Value must be integer &gt; 0 and &lt;= 99!</value>
+  </data>
+  <data name="NumericValueGT0LT1950.ErrorMessage" xml:space="preserve">
+    <value>Value must be integer &gt; 0 and &lt;= 1950!</value>
+  </data>
+  <data name="RequiredField.ErrorMessage" xml:space="preserve">
+    <value>Value must not be blank!</value>
+  </data>
+  <data name="MaxPendingUploadsSizeRange.ErrorMessage" xml:space="preserve">
+    <value>Must be an integer &gt;= 0 and &lt;= 20000.</value>
+  </data>
+  <data name="plMaxPendingUploadsSize.Help" xml:space="preserve">
+    <value>The maximum size in kb to which the files pending upload may grow before the pending uploads are committed to storage. An entry of '0' means no limitation. A maximum of 20000 kb or about 20 mb is permitted.</value>
+  </data>
+  <data name="plMaxPendingUploadsSize.Text" xml:space="preserve">
+    <value>Maximum Pending Uploads Size:</value>
+  </data>
+  <data name="plCreatedDate.Help" xml:space="preserve">
+    <value>Date and time this gallery module was added to the page. Cannot be changed manually.</value>
+  </data>
+  <data name="plCreatedDate.Text" xml:space="preserve">
+    <value>Created On:</value>
+  </data>
+  <data name="RootURL.ErrorMessage" xml:space="preserve">
+    <value>Root URL of the gallery must be relative to the portal home directory and not contain any invalid characters. Use of ../ is not permitted.</value>
+  </data>
+  <data name="lblMaxFileSizeWarning.Text" xml:space="preserve">
+    <value>Value exceeds limits imposed in web.config. Please click on Help ? icon for more information!</value>
+  </data>
+  <data name="MaxFileSizeLimits.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Current limitations set in web.config are as follows:&lt;br /&gt;maxRequestLength - {0} kb&lt;br /&gt;requestLengthDiskThreshold - {1} kb&lt;br /&gt;executionTimeout - {2} sec.</value>
+  </data>
+  <data name="NumericValueGE10LE100.ErrorMessage" xml:space="preserve">
+    <value>Value must be integer &gt;=10 and &lt;=100!</value>
+  </data>
+  <data name="plEncoderQuality.Help" xml:space="preserve">
+    <value>Sets the desired compression level (encoder quality) with which JPEG images are saved. Range: (worst) 10-100 (best)</value>
+  </data>
+  <data name="plEncoderQuality.Text" xml:space="preserve">
+    <value>Encoder Quality:</value>
+  </data>
+  <data name="plDefaultAlbum.Help" xml:space="preserve">
+    <value>Select the album that should be initially opened when browsing to a page containing the Gallery module.</value>
+  </data>
+  <data name="plDefaultAlbum.Text" xml:space="preserve">
+    <value>Default Album:</value>
+  </data>
+  <data name="RootAlbum.Text" xml:space="preserve">
+    <value>Root Album ({0})</value>
+  </data>
+</root>
