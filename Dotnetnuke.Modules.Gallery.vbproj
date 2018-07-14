@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -13,12 +14,12 @@
     <AssemblyName>Dotnetnuke.Modules.Gallery</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <UseIISExpress>false</UseIISExpress>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,22 +47,22 @@
   <ItemGroup>
     <Reference Include="DotNetNuke, Version=5.6.2.144, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\_references\05.06.02\DotNetNuke.dll</HintPath>
+      <HintPath>..\..\bin\DotNetNuke.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DotNetNuke.Web, Version=5.6.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\_references\05.06.02\DotNetNuke.Web.dll</HintPath>
+      <HintPath>..\..\bin\DotNetNuke.Web.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DotNetNuke.WebControls, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\_references\05.06.02\DotNetNuke.WebControls.dll</HintPath>
+      <HintPath>..\..\bin\DotNetNuke.WebControls.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DotNetNuke.WebUtility, Version=4.2.0.185, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\_references\05.06.02\DotNetNuke.WebUtility.dll</HintPath>
+      <HintPath>..\..\bin\DotNetNuke.WebUtility.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Gallery.Exif, Version=1.0.1890.21041, Culture=neutral">
@@ -70,7 +71,7 @@
     </Reference>
     <Reference Include="SharpZipLib, Version=0.81.0.1407, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\_references\05.06.02\SharpZipLib.dll</HintPath>
+      <HintPath>..\..\bin\SharpZipLib.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -837,26 +838,18 @@
   <ItemGroup>
     <None Include="Providers\DataProviders\SqlDataProvider\04.04.00.SqlDataProvider" />
   </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
-  <Import Project="$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets" Condition="Exists('$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets')" />
-  <Import Project="$(MSBuildProjectDirectory)\Buildfiles\DotNetNuke.Modules.GalleryBuild.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>4825</DevelopmentServerPort>
-          <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/Gallery</IISUrl>
-          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
-          <IISAppRootUrl>http://localhost/DNN5Source</IISAppRootUrl>
-          <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
-          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>
