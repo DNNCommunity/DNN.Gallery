@@ -137,7 +137,14 @@ namespace DotNetNuke.Modules.Gallery
 				totalScore += voteItem.Score;
 				mUserList.Add(voteItem.UserID);
 			}
-			mScore = totalScore / Votes.Count;
+            if (Votes.Count > 0)
+            {
+                mScore = totalScore / Votes.Count;
+            }
+            else
+            {
+                mScore = 0f;
+            }
 		}
 
 		public static VoteCollection GetVoting(string ParentPath, string FileName)
