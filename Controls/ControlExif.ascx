@@ -1,4 +1,4 @@
-<%@ Control language="vb" AutoEventWireup="false" Inherits="DotNetNuke.Modules.Gallery.WebControls.Exif" Codebehind="ControlExif.ascx.vb" %>
+<%@ Control language="vb" AutoEventWireup="false" Inherits="DotNetNuke.Modules.Gallery.WebControls.Exif" Codebehind="ControlExif.ascx.cs" %>
 <table>
 	<tr>
 		<td class="Gallery_FileEditImage"><asp:image id="imgExif" Runat="server" AlternateText='""'></asp:image></td>
@@ -8,7 +8,7 @@
 			<table class="Gallery_Exif">
 				<tr>
 					<td>
-                      <asp:datagrid id="grdExif" runat="server" AutoGenerateColumns="False" DataKeyField="ID" CssClass="Gallery_ExifGrid">
+                      <asp:datagrid id="grdExif" runat="server" AutoGenerateColumns="False" DataKeyField="ID" CssClass="Gallery_ExifGrid" OnItemDataBound="grdExif_ItemDataBound">
                       		<HeaderStyle CssClass="Gallery_GridHeader Left" />
                             <ItemStyle CssClass="Gallery_GridItem Left" />
 							<Columns>
