@@ -18,7 +18,7 @@ x64/
 x86/
 build/
 bld/
-[Bb]in/
+[Bb]in/DotNetNuke*.*
 [Oo]bj/
 [Ii]nstallation/*.zip
 

@@ -1,0 +1,861 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9B15CEDD-18C6-4125-86B9-074A2DECD73B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace />
+    <AssemblyName>Dotnetnuke.Modules.Gallery</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>true</UseIISExpress>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Dotnetnuke.Modules.Gallery.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Dotnetnuke.Gallery.xml</DocumentationFile>
+    <NoWarn>42029,42031,42353,42354,42355</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetNuke, Version=5.6.2.144, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\DotNetNuke.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DotNetNuke.Web, Version=5.6.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\DotNetNuke.Web.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DotNetNuke.WebControls, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\DotNetNuke.WebControls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DotNetNuke.WebUtility, Version=4.2.0.185, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\DotNetNuke.WebUtility.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gallery.Exif, Version=1.0.1890.21041, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Exif\bin\Gallery.Exif.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="SharpZipLib, Version=0.81.0.1407, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\SharpZipLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlbumEdit.ascx.cs">
+      <DependentUpon>AlbumEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlbumEdit.ascx.designer.cs">
+      <DependentUpon>AlbumEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\Config.cs" />
+    <Compile Include="Configuration\GalleryPreConfig.cs" />
+    <Compile Include="Container.ascx.cs">
+      <DependentUpon>Container.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Container.ascx.designer.cs">
+      <DependentUpon>Container.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlAlbum.ascx.cs">
+      <DependentUpon>ControlAlbum.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlAlbum.ascx.designer.cs">
+      <DependentUpon>ControlAlbum.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlBreadCrumbs.ascx.cs">
+      <DependentUpon>ControlBreadCrumbs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlBreadCrumbs.ascx.designer.cs">
+      <DependentUpon>ControlBreadCrumbs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlExif.ascx.cs">
+      <DependentUpon>ControlExif.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlExif.ascx.designer.cs">
+      <DependentUpon>ControlExif.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlFlashPlayer.ascx.cs">
+      <DependentUpon>ControlFlashPlayer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlFlashPlayer.ascx.designer.cs">
+      <DependentUpon>ControlFlashPlayer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlGalleryMenu.ascx.cs">
+      <DependentUpon>ControlGalleryMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlGalleryMenu.ascx.designer.cs">
+      <DependentUpon>ControlGalleryMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlLookup.ascx.cs">
+      <DependentUpon>ControlLookup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlLookup.ascx.designer.cs">
+      <DependentUpon>ControlLookup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlMediaPlayer.ascx.cs">
+      <DependentUpon>ControlMediaPlayer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlMediaPlayer.ascx.designer.cs">
+      <DependentUpon>ControlMediaPlayer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlPager.ascx.cs">
+      <DependentUpon>ControlPager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlPager.ascx.designer.cs">
+      <DependentUpon>ControlPager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlSlideshow.ascx.cs">
+      <DependentUpon>ControlSlideshow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlSlideshow.ascx.designer.cs">
+      <DependentUpon>ControlSlideshow.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlUpload.ascx.cs">
+      <DependentUpon>ControlUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlUpload.ascx.designer.cs">
+      <DependentUpon>ControlUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlViewer.ascx.cs">
+      <DependentUpon>ControlViewer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlViewer.ascx.designer.cs">
+      <DependentUpon>ControlViewer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GalleryWebControlBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExifMetaData.ascx.cs">
+      <DependentUpon>ExifMetaData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExifMetaData.ascx.designer.cs">
+      <DependentUpon>ExifMetaData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="FileEdit.ascx.cs">
+      <DependentUpon>FileEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileEdit.ascx.designer.cs">
+      <DependentUpon>FileEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="FlashPlayer.ascx.cs">
+      <DependentUpon>FlashPlayer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FlashPlayer.ascx.designer.cs">
+      <DependentUpon>FlashPlayer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GalleryItems\File.cs" />
+    <Compile Include="GalleryItems\Folder.cs" />
+    <Compile Include="GalleryItems\MaintenanceFile.cs" />
+    <Compile Include="GalleryItems\ObjectCollection.cs" />
+    <Compile Include="GalleryItems\ObjectInfo.cs" />
+    <Compile Include="GalleryItems\Vote.cs" />
+    <Compile Include="GalleryPage.aspx.cs">
+      <DependentUpon>GalleryPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GalleryPage.aspx.designer.cs">
+      <DependentUpon>GalleryPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Image.aspx.cs">
+      <DependentUpon>Image.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Image.aspx.designer.cs">
+      <DependentUpon>Image.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance.ascx.cs">
+      <DependentUpon>Maintenance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maintenance.ascx.designer.cs">
+      <DependentUpon>Maintenance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MediaPlayer.ascx.cs">
+      <DependentUpon>MediaPlayer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MediaPlayer.ascx.designer.cs">
+      <DependentUpon>MediaPlayer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Misc\Authorization.cs" />
+    <Compile Include="Misc\Search.cs" />
+    <Compile Include="My Project\Application.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.cs" />
+    <Compile Include="MyNamespaceSupportForCSharp.cs" />
+    <Compile Include="Popup\GalleryPopupControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popup\GalleryPopupData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Popup\GalleryPopupSearch.cs" />
+    <Compile Include="Popup\PopupSelectMulti.aspx.cs">
+      <DependentUpon>PopupSelectMulti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popup\PopupSelectMulti.aspx.designer.cs">
+      <DependentUpon>PopupSelectMulti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\PopupSelectSingle.aspx.cs">
+      <DependentUpon>PopupSelectSingle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popup\PopupSelectSingle.aspx.designer.cs">
+      <DependentUpon>PopupSelectSingle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Request\BaseRequest.cs" />
+    <Compile Include="Request\FlashRequest.cs" />
+    <Compile Include="Request\Helper.cs" />
+    <Compile Include="Request\MaintenanceRequest.cs" />
+    <Compile Include="Request\MediaRequest.cs" />
+    <Compile Include="Request\Request.cs" />
+    <Compile Include="Request\UserRequest.cs" />
+    <Compile Include="Request\ViewerRequest.cs" />
+    <Compile Include="Settings.ascx.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings.ascx.designer.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Slideshow.ascx.cs">
+      <DependentUpon>Slideshow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Slideshow.ascx.designer.cs">
+      <DependentUpon>Slideshow.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload\UploadCollection.cs" />
+    <Compile Include="Upload\UploadFile.cs" />
+    <Compile Include="Utilities\FileHeaderAnalysis.cs" />
+    <Compile Include="Utilities\Graphics.cs" />
+    <Compile Include="Utilities\Utilities.cs" />
+    <Compile Include="Utilities\XML.cs" />
+    <Compile Include="Viewer.ascx.cs">
+      <DependentUpon>Viewer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Viewer.ascx.designer.cs">
+      <DependentUpon>Viewer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BaseView.cs" />
+    <Compile Include="Views\CardView.cs" />
+    <Compile Include="Views\ControlMediaMenu.cs" />
+    <Compile Include="Views\ControlTemplateList.cs" />
+    <Compile Include="Views\GalleryControl.cs" />
+    <Compile Include="Views\ListView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\NoConfigView.cs" />
+    <Compile Include="Views\StandardView.cs" />
+    <Compile Include="Voting.ascx.cs">
+      <DependentUpon>Voting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Voting.ascx.designer.cs">
+      <DependentUpon>Voting.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="DotNetNuke" />
+    <Import Include="DotNetNuke.Common" />
+    <Import Include="DotNetNuke.Common.Utilities" />
+    <Import Include="DotNetNuke.Entities" />
+    <Import Include="DotNetNuke.Framework" />
+    <Import Include="DotNetNuke.Security" />
+    <Import Include="DotNetNuke.Services" />
+    <Import Include="DotNetNuke.Services.Exceptions" />
+    <Import Include="DotNetNuke.Services.Localization" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="04.04.00.txt" />
+    <Content Include="AlbumEdit.ascx" />
+    <Content Include="App_LocalResources\AlbumEdit.ascx.resx" />
+    <Content Include="App_LocalResources\Container.ascx.resx" />
+    <Content Include="App_LocalResources\ExifMetaData.ascx.resx" />
+    <Content Include="App_LocalResources\FileEdit.ascx.resx" />
+    <Content Include="App_LocalResources\FlashPlayer.ascx.resx" />
+    <Content Include="App_LocalResources\Maintenance.ascx.resx" />
+    <Content Include="App_LocalResources\MediaPlayer.ascx.resx" />
+    <Content Include="App_LocalResources\Settings.ascx.resx" />
+    <Content Include="App_LocalResources\SharedResources.resx" />
+    <Content Include="App_LocalResources\Slideshow.ascx.resx" />
+    <Content Include="App_LocalResources\Viewer.ascx.resx" />
+    <Content Include="App_LocalResources\Voting.ascx.resx" />
+    <Content Include="bin\Gallery.Exif.dll" />
+    <Content Include="Container.ascx" />
+    <Content Include="Controls\App_LocalResources\ControlAlbum.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Controls\App_LocalResources\ControlExif.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Controls\App_LocalResources\ControlLookup.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Controls\App_LocalResources\ControlUpload.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Controls\App_LocalResources\SharedResources.resx" />
+    <Content Include="Controls\ControlAlbum.ascx" />
+    <Content Include="Controls\ControlBreadCrumbs.ascx" />
+    <Content Include="Controls\ControlExif.ascx" />
+    <Content Include="Controls\ControlFlashPlayer.ascx" />
+    <Content Include="Controls\ControlGalleryMenu.ascx" />
+    <Content Include="Controls\ControlLookup.ascx" />
+    <Content Include="Controls\ControlMediaPlayer.ascx" />
+    <Content Include="Controls\ControlPager.ascx" />
+    <Content Include="Controls\ControlSlideshow.ascx" />
+    <Content Include="Controls\ControlUpload.ascx" />
+    <Content Include="Controls\ControlViewer.ascx" />
+    <Content Include="Documentation\DotNetNuke.Modules.Gallery_04.04.00_ReleaseNotes.txt" />
+    <Content Include="Documentation\License.txt" />
+    <Content Include="Documentation\Readme.txt" />
+    <Content Include="Dotnetnuke.Modules.Gallery.dnn">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ExifMetaData.ascx" />
+    <Content Include="FileEdit.ascx" />
+    <Content Include="FlashPlayer.ascx" />
+    <Content Include="GalleryPage.aspx" />
+    <Content Include="Image.aspx" />
+    <Content Include="Images\green-ok.gif" />
+    <Content Include="Images\m_Back.gif" />
+    <Content Include="Images\m_calendar.gif" />
+    <Content Include="Images\spacer.gif" />
+    <Content Include="Images\sq_edit.gif" />
+    <Content Include="Images\sq_lookup.gif" />
+    <Content Include="Images\sq_remove.gif" />
+    <Content Include="Images\s_Refresh.gif" />
+    <Content Include="Images\s_spacer.gif" />
+    <Content Include="Images\yellow-warning.gif" />
+    <Content Include="Maintenance.ascx" />
+    <Content Include="MediaPlayer.ascx" />
+    <Content Include="Popup\App_LocalResources\PopupSelectMulti.aspx.resx" />
+    <Content Include="Popup\App_LocalResources\PopupSelectSingle.aspx.resx" />
+    <Content Include="Popup\App_LocalResources\SharedResources.resx" />
+    <Content Include="Popup\GalleryPopup.js" />
+    <Content Include="Popup\Images\selectGrey.gif" />
+    <Content Include="Popup\Images\selectOff.gif" />
+    <Content Include="Popup\Images\selectOn.gif" />
+    <Content Include="Popup\Images\sp_barLine.gif" />
+    <Content Include="Popup\Images\sp_breadcrumb.gif" />
+    <Content Include="Popup\Images\sp_gallery.gif" />
+    <Content Include="Popup\Images\sp_site.gif" />
+    <Content Include="Popup\Images\sp_team.gif" />
+    <Content Include="Popup\Images\sp_user.gif" />
+    <Content Include="Popup\Popup.css" />
+    <Content Include="Popup\PopupData.aspx" />
+    <Content Include="Popup\PopupSelectMulti.aspx" />
+    <Content Include="Popup\PopupSelectSingle.aspx" />
+    <Content Include="Resources\_photoMetadata.xml" />
+    <Content Include="Settings.ascx" />
+    <Content Include="Slideshow.ascx" />
+    <Content Include="Themes\DNNGray\DNNGray.css" />
+    <Content Include="Themes\DNNGray\Images\album_bottom_center.gif" />
+    <Content Include="Themes\DNNGray\Images\album_bottom_left.gif" />
+    <Content Include="Themes\DNNGray\Images\album_bottom_right.gif" />
+    <Content Include="Themes\DNNGray\Images\album_middle_left.gif" />
+    <Content Include="Themes\DNNGray\Images\album_middle_right.gif" />
+    <Content Include="Themes\DNNGray\Images\album_spacer_center.gif" />
+    <Content Include="Themes\DNNGray\Images\album_spacer_left.gif" />
+    <Content Include="Themes\DNNGray\Images\album_spacer_right.gif" />
+    <Content Include="Themes\DNNGray\Images\album_top_center.gif" />
+    <Content Include="Themes\DNNGray\Images\album_top_left.gif" />
+    <Content Include="Themes\DNNGray\Images\album_top_right.gif" />
+    <Content Include="Themes\DNNGray\Images\alt_header_bg.gif" />
+    <Content Include="Themes\DNNGray\Images\alt_header_cap_left.gif" />
+    <Content Include="Themes\DNNGray\Images\alt_header_cap_right.gif" />
+    <Content Include="Themes\DNNGray\Images\bottom_bg.gif" />
+    <Content Include="Themes\DNNGray\Images\bottom_cap_left.gif" />
+    <Content Include="Themes\DNNGray\Images\bottom_cap_right.gif" />
+    <Content Include="Themes\DNNGray\Images\bottom_panel_cap_left.gif" />
+    <Content Include="Themes\DNNGray\Images\bottom_panel_cap_right.gif" />
+    <Content Include="Themes\DNNGray\Images\breadcrumb.gif" />
+    <Content Include="Themes\DNNGray\Images\flash.gif" />
+    <Content Include="Themes\DNNGray\Images\folder.gif" />
+    <Content Include="Themes\DNNGray\Images\folder_0.gif" />
+    <Content Include="Themes\DNNGray\Images\footer_bg.gif" />
+    <Content Include="Themes\DNNGray\Images\footer_cap_left.gif" />
+    <Content Include="Themes\DNNGray\Images\footer_cap_right.gif" />
+    <Content Include="Themes\DNNGray\Images\frame_bottom_center.gif" />
+    <Content Include="Themes\DNNGray\Images\frame_bottom_left.gif" />
+    <Content Include="Themes\DNNGray\Images\frame_bottom_right.gif" />
+    <Content Include="Themes\DNNGray\Images\frame_middle_left.gif" />
+    <Content Include="Themes\DNNGray\Images\frame_middle_right.gif" />
+    <Content Include="Themes\DNNGray\Images\frame_top_center.gif" />
+    <Content Include="Themes\DNNGray\Images\frame_top_left.gif" />
+    <Content Include="Themes\DNNGray\Images\frame_top_right.gif" />
+    <Content Include="Themes\DNNGray\Images\header_bg.gif" />
+    <Content Include="Themes\DNNGray\Images\header_cap_left.gif" />
+    <Content Include="Themes\DNNGray\Images\header_cap_right.gif" />
+    <Content Include="Themes\DNNGray\Images\mediaplayer.gif" />
+    <Content Include="Themes\DNNGray\Images\m_Back.gif" />
+    <Content Include="Themes\DNNGray\Images\m_save.gif" />
+    <Content Include="Themes\DNNGray\Images\picture_bottom_center.gif" />
+    <Content Include="Themes\DNNGray\Images\picture_bottom_left.gif" />
+    <Content Include="Themes\DNNGray\Images\picture_bottom_right.gif" />
+    <Content Include="Themes\DNNGray\Images\picture_middle_left.gif" />
+    <Content Include="Themes\DNNGray\Images\picture_middle_right.gif" />
+    <Content Include="Themes\DNNGray\Images\picture_spacer_center.gif" />
+    <Content Include="Themes\DNNGray\Images\picture_spacer_left.gif" />
+    <Content Include="Themes\DNNGray\Images\picture_spacer_right.gif" />
+    <Content Include="Themes\DNNGray\Images\picture_top_center.gif" />
+    <Content Include="Themes\DNNGray\Images\picture_top_left.gif" />
+    <Content Include="Themes\DNNGray\Images\picture_top_right.gif" />
+    <Content Include="Themes\DNNGray\Images\row_cap_left.gif" />
+    <Content Include="Themes\DNNGray\Images\row_cap_right.gif" />
+    <Content Include="Themes\DNNGray\Images\row_image_left.gif" />
+    <Content Include="Themes\DNNGray\Images\spacer.gif" />
+    <Content Include="Themes\DNNGray\Images\spacer_left.gif" />
+    <Content Include="Themes\DNNGray\Images\spacer_right.gif" />
+    <Content Include="Themes\DNNGray\Images\stars_0.gif" />
+    <Content Include="Themes\DNNGray\Images\stars_10.gif" />
+    <Content Include="Themes\DNNGray\Images\stars_15.gif" />
+    <Content Include="Themes\DNNGray\Images\stars_20.gif" />
+    <Content Include="Themes\DNNGray\Images\stars_25.gif" />
+    <Content Include="Themes\DNNGray\Images\stars_30.gif" />
+    <Content Include="Themes\DNNGray\Images\stars_35.gif" />
+    <Content Include="Themes\DNNGray\Images\stars_40.gif" />
+    <Content Include="Themes\DNNGray\Images\stars_45.gif" />
+    <Content Include="Themes\DNNGray\Images\stars_5.gif" />
+    <Content Include="Themes\DNNGray\Images\stars_50.gif" />
+    <Content Include="Themes\DNNGray\Images\s_book2.gif" />
+    <Content Include="Themes\DNNGray\Images\s_bookopen.gif" />
+    <Content Include="Themes\DNNGray\Images\s_bw.gif" />
+    <Content Include="Themes\DNNGray\Images\s_bwminus.gif" />
+    <Content Include="Themes\DNNGray\Images\s_bwplus.gif" />
+    <Content Include="Themes\DNNGray\Images\s_color.gif" />
+    <Content Include="Themes\DNNGray\Images\s_download.gif" />
+    <Content Include="Themes\DNNGray\Images\s_edit.gif" />
+    <Content Include="Themes\DNNGray\Images\s_exif.gif" />
+    <Content Include="Themes\DNNGray\Images\s_flash.gif" />
+    <Content Include="Themes\DNNGray\Images\s_flipx.gif" />
+    <Content Include="Themes\DNNGray\Images\s_flipy.gif" />
+    <Content Include="Themes\DNNGray\Images\s_folder.gif" />
+    <Content Include="Themes\DNNGray\Images\s_forum.gif" />
+    <Content Include="Themes\DNNGray\Images\s_help.gif" />
+    <Content Include="Themes\DNNGray\Images\s_jpg.gif" />
+    <Content Include="Themes\DNNGray\Images\s_letter.gif" />
+    <Content Include="Themes\DNNGray\Images\s_mediaPlayer.gif" />
+    <Content Include="Themes\DNNGray\Images\s_movie.gif" />
+    <Content Include="Themes\DNNGray\Images\s_new2.gif" />
+    <Content Include="Themes\DNNGray\Images\s_next.gif" />
+    <Content Include="Themes\DNNGray\Images\s_Picture.gif" />
+    <Content Include="Themes\DNNGray\Images\s_previous.gif" />
+    <Content Include="Themes\DNNGray\Images\s_rotateLeft.gif" />
+    <Content Include="Themes\DNNGray\Images\s_rotateRight.gif" />
+    <Content Include="Themes\DNNGray\Images\s_settings.gif" />
+    <Content Include="Themes\DNNGray\Images\s_threadadd.gif" />
+    <Content Include="Themes\DNNGray\Images\s_threadview.gif" />
+    <Content Include="Themes\DNNGray\Images\s_zip.gif" />
+    <Content Include="Themes\DNNGray\Images\s_zoomin.gif" />
+    <Content Include="Themes\DNNGray\Images\s_zoomout.gif" />
+    <Content Include="Themes\DNNSilver\DNNSilver.css" />
+    <Content Include="Themes\DNNSilver\Images\album_bottom_center.gif" />
+    <Content Include="Themes\DNNSilver\Images\album_bottom_left.gif" />
+    <Content Include="Themes\DNNSilver\Images\album_bottom_right.gif" />
+    <Content Include="Themes\DNNSilver\Images\album_middle_left.gif" />
+    <Content Include="Themes\DNNSilver\Images\album_middle_right.gif" />
+    <Content Include="Themes\DNNSilver\Images\album_spacer_center.gif" />
+    <Content Include="Themes\DNNSilver\Images\album_spacer_left.gif" />
+    <Content Include="Themes\DNNSilver\Images\album_spacer_right.gif" />
+    <Content Include="Themes\DNNSilver\Images\album_top_center.gif" />
+    <Content Include="Themes\DNNSilver\Images\album_top_left.gif" />
+    <Content Include="Themes\DNNSilver\Images\album_top_right.gif" />
+    <Content Include="Themes\DNNSilver\Images\alt_header_bg.gif" />
+    <Content Include="Themes\DNNSilver\Images\alt_header_cap_left.gif" />
+    <Content Include="Themes\DNNSilver\Images\alt_header_cap_right.gif" />
+    <Content Include="Themes\DNNSilver\Images\bottom_bg.gif" />
+    <Content Include="Themes\DNNSilver\Images\bottom_cap_left.gif" />
+    <Content Include="Themes\DNNSilver\Images\bottom_cap_right.gif" />
+    <Content Include="Themes\DNNSilver\Images\bottom_panel_cap_left.gif" />
+    <Content Include="Themes\DNNSilver\Images\bottom_panel_cap_right.gif" />
+    <Content Include="Themes\DNNSilver\Images\breadcrumb.gif" />
+    <Content Include="Themes\DNNSilver\Images\flash.gif" />
+    <Content Include="Themes\DNNSilver\Images\folder.gif" />
+    <Content Include="Themes\DNNSilver\Images\folder_0.gif" />
+    <Content Include="Themes\DNNSilver\Images\footer_bg.gif" />
+    <Content Include="Themes\DNNSilver\Images\footer_cap_left.gif" />
+    <Content Include="Themes\DNNSilver\Images\footer_cap_right.gif" />
+    <Content Include="Themes\DNNSilver\Images\frame_bottom_center.gif" />
+    <Content Include="Themes\DNNSilver\Images\frame_bottom_left.gif" />
+    <Content Include="Themes\DNNSilver\Images\frame_bottom_right.gif" />
+    <Content Include="Themes\DNNSilver\Images\frame_middle_left.gif" />
+    <Content Include="Themes\DNNSilver\Images\frame_middle_right.gif" />
+    <Content Include="Themes\DNNSilver\Images\frame_top_center.gif" />
+    <Content Include="Themes\DNNSilver\Images\frame_top_left.gif" />
+    <Content Include="Themes\DNNSilver\Images\frame_top_right.gif" />
+    <Content Include="Themes\DNNSilver\Images\header_bg.gif" />
+    <Content Include="Themes\DNNSilver\Images\header_cap_left.gif" />
+    <Content Include="Themes\DNNSilver\Images\header_cap_right.gif" />
+    <Content Include="Themes\DNNSilver\Images\mediaplayer.gif" />
+    <Content Include="Themes\DNNSilver\Images\m_Back.gif" />
+    <Content Include="Themes\DNNSilver\Images\m_save.gif" />
+    <Content Include="Themes\DNNSilver\Images\picture_bottom_center.gif" />
+    <Content Include="Themes\DNNSilver\Images\picture_bottom_center.jpg" />
+    <Content Include="Themes\DNNSilver\Images\picture_bottom_left.gif" />
+    <Content Include="Themes\DNNSilver\Images\picture_bottom_right.gif" />
+    <Content Include="Themes\DNNSilver\Images\picture_middle_left.gif" />
+    <Content Include="Themes\DNNSilver\Images\picture_middle_right.gif" />
+    <Content Include="Themes\DNNSilver\Images\picture_spacer_center.gif" />
+    <Content Include="Themes\DNNSilver\Images\picture_spacer_left.gif" />
+    <Content Include="Themes\DNNSilver\Images\picture_spacer_right.gif" />
+    <Content Include="Themes\DNNSilver\Images\picture_top_center.gif" />
+    <Content Include="Themes\DNNSilver\Images\picture_top_left.gif" />
+    <Content Include="Themes\DNNSilver\Images\picture_top_right.gif" />
+    <Content Include="Themes\DNNSilver\Images\row_cap_left.gif" />
+    <Content Include="Themes\DNNSilver\Images\row_cap_right.gif" />
+    <Content Include="Themes\DNNSilver\Images\row_image_left.gif" />
+    <Content Include="Themes\DNNSilver\Images\spacer.gif" />
+    <Content Include="Themes\DNNSilver\Images\spacer_left.gif" />
+    <Content Include="Themes\DNNSilver\Images\spacer_right.gif" />
+    <Content Include="Themes\DNNSilver\Images\stars_0.gif" />
+    <Content Include="Themes\DNNSilver\Images\stars_10.gif" />
+    <Content Include="Themes\DNNSilver\Images\stars_15.gif" />
+    <Content Include="Themes\DNNSilver\Images\stars_20.gif" />
+    <Content Include="Themes\DNNSilver\Images\stars_25.gif" />
+    <Content Include="Themes\DNNSilver\Images\stars_30.gif" />
+    <Content Include="Themes\DNNSilver\Images\stars_35.gif" />
+    <Content Include="Themes\DNNSilver\Images\stars_40.gif" />
+    <Content Include="Themes\DNNSilver\Images\stars_45.gif" />
+    <Content Include="Themes\DNNSilver\Images\stars_5.gif" />
+    <Content Include="Themes\DNNSilver\Images\stars_50.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_book2.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_bookopen.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_bw.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_bwminus.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_bwplus.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_color.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_download.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_edit.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_exif.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_flash.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_flipx.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_flipy.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_folder.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_forum.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_help.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_jpg.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_letter.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_mediaPlayer.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_movie.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_new2.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_next.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_Picture.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_previous.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_rotateLeft.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_rotateRight.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_settings.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_threadadd.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_threadview.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_zip.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_zoomin.gif" />
+    <Content Include="Themes\DNNSilver\Images\s_zoomout.gif" />
+    <Content Include="Themes\DNNSimple\DNNSimple.css" />
+    <Content Include="Themes\DNNSimple\Images\album_bottom_center.gif" />
+    <Content Include="Themes\DNNSimple\Images\album_bottom_left.gif" />
+    <Content Include="Themes\DNNSimple\Images\album_bottom_right.gif" />
+    <Content Include="Themes\DNNSimple\Images\album_middle_left.gif" />
+    <Content Include="Themes\DNNSimple\Images\album_middle_right.gif" />
+    <Content Include="Themes\DNNSimple\Images\album_spacer_center.gif" />
+    <Content Include="Themes\DNNSimple\Images\album_spacer_left.gif" />
+    <Content Include="Themes\DNNSimple\Images\album_spacer_right.gif" />
+    <Content Include="Themes\DNNSimple\Images\album_top_center.gif" />
+    <Content Include="Themes\DNNSimple\Images\album_top_left.gif" />
+    <Content Include="Themes\DNNSimple\Images\album_top_right.gif" />
+    <Content Include="Themes\DNNSimple\Images\alt_header_bg.gif" />
+    <Content Include="Themes\DNNSimple\Images\alt_header_cap_left.gif" />
+    <Content Include="Themes\DNNSimple\Images\alt_header_cap_right.gif" />
+    <Content Include="Themes\DNNSimple\Images\bottom_bg.gif" />
+    <Content Include="Themes\DNNSimple\Images\bottom_cap_left.gif" />
+    <Content Include="Themes\DNNSimple\Images\bottom_cap_right.gif" />
+    <Content Include="Themes\DNNSimple\Images\bottom_panel_cap_left.gif" />
+    <Content Include="Themes\DNNSimple\Images\bottom_panel_cap_right.gif" />
+    <Content Include="Themes\DNNSimple\Images\breadcrumb.gif" />
+    <Content Include="Themes\DNNSimple\Images\flash.gif" />
+    <Content Include="Themes\DNNSimple\Images\folder.gif" />
+    <Content Include="Themes\DNNSimple\Images\folder_0.gif" />
+    <Content Include="Themes\DNNSimple\Images\footer_bg.gif" />
+    <Content Include="Themes\DNNSimple\Images\footer_cap_left.gif" />
+    <Content Include="Themes\DNNSimple\Images\footer_cap_right.gif" />
+    <Content Include="Themes\DNNSimple\Images\header_bg.gif" />
+    <Content Include="Themes\DNNSimple\Images\header_cap_left.gif" />
+    <Content Include="Themes\DNNSimple\Images\header_cap_right.gif" />
+    <Content Include="Themes\DNNSimple\Images\mediaplayer.gif" />
+    <Content Include="Themes\DNNSimple\Images\m_Back.gif" />
+    <Content Include="Themes\DNNSimple\Images\m_save.gif" />
+    <Content Include="Themes\DNNSimple\Images\picture_spacer_center.gif" />
+    <Content Include="Themes\DNNSimple\Images\picture_spacer_left.gif" />
+    <Content Include="Themes\DNNSimple\Images\picture_spacer_right.gif" />
+    <Content Include="Themes\DNNSimple\Images\row_cap_left.gif" />
+    <Content Include="Themes\DNNSimple\Images\row_cap_right.gif" />
+    <Content Include="Themes\DNNSimple\Images\row_image_left.gif" />
+    <Content Include="Themes\DNNSimple\Images\spacer.gif" />
+    <Content Include="Themes\DNNSimple\Images\spacer_left.gif" />
+    <Content Include="Themes\DNNSimple\Images\spacer_right.gif" />
+    <Content Include="Themes\DNNSimple\Images\stars_0.gif" />
+    <Content Include="Themes\DNNSimple\Images\stars_10.gif" />
+    <Content Include="Themes\DNNSimple\Images\stars_15.gif" />
+    <Content Include="Themes\DNNSimple\Images\stars_20.gif" />
+    <Content Include="Themes\DNNSimple\Images\stars_25.gif" />
+    <Content Include="Themes\DNNSimple\Images\stars_30.gif" />
+    <Content Include="Themes\DNNSimple\Images\stars_35.gif" />
+    <Content Include="Themes\DNNSimple\Images\stars_40.gif" />
+    <Content Include="Themes\DNNSimple\Images\stars_45.gif" />
+    <Content Include="Themes\DNNSimple\Images\stars_5.gif" />
+    <Content Include="Themes\DNNSimple\Images\stars_50.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_book2.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_bookopen.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_bw.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_bwminus.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_bwplus.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_color.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_download.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_edit.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_exif.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_flash.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_flipx.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_flipy.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_folder.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_forum.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_help.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_jpg.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_letter.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_mediaPlayer.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_movie.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_new2.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_next.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_Picture.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_previous.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_rotateLeft.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_rotateRight.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_settings.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_threadadd.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_threadview.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_zip.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_zoomin.gif" />
+    <Content Include="Themes\DNNSimple\Images\s_zoomout.gif" />
+    <Content Include="Themes\DotNetNuke\DotNetNuke.css" />
+    <Content Include="Themes\DotNetNuke\Images\album_bottom_center.gif" />
+    <Content Include="Themes\DotNetNuke\Images\album_bottom_left.gif" />
+    <Content Include="Themes\DotNetNuke\Images\album_bottom_right.gif" />
+    <Content Include="Themes\DotNetNuke\Images\album_middle_left.gif" />
+    <Content Include="Themes\DotNetNuke\Images\album_middle_right.gif" />
+    <Content Include="Themes\DotNetNuke\Images\album_spacer_center.gif" />
+    <Content Include="Themes\DotNetNuke\Images\album_spacer_left.gif" />
+    <Content Include="Themes\DotNetNuke\Images\album_spacer_right.gif" />
+    <Content Include="Themes\DotNetNuke\Images\album_top_center.gif" />
+    <Content Include="Themes\DotNetNuke\Images\album_top_left.gif" />
+    <Content Include="Themes\DotNetNuke\Images\album_top_right.gif" />
+    <Content Include="Themes\DotNetNuke\Images\alt_header_bg.gif" />
+    <Content Include="Themes\DotNetNuke\Images\alt_header_cap_left.gif" />
+    <Content Include="Themes\DotNetNuke\Images\alt_header_cap_right.gif" />
+    <Content Include="Themes\DotNetNuke\Images\bottom_bg.gif" />
+    <Content Include="Themes\DotNetNuke\Images\bottom_cap_left.gif" />
+    <Content Include="Themes\DotNetNuke\Images\bottom_cap_right.gif" />
+    <Content Include="Themes\DotNetNuke\Images\bottom_panel_cap_left.gif" />
+    <Content Include="Themes\DotNetNuke\Images\bottom_panel_cap_right.gif" />
+    <Content Include="Themes\DotNetNuke\Images\breadcrumb.gif" />
+    <Content Include="Themes\DotNetNuke\Images\flash.gif" />
+    <Content Include="Themes\DotNetNuke\Images\folder.gif" />
+    <Content Include="Themes\DotNetNuke\Images\folder_0.gif" />
+    <Content Include="Themes\DotNetNuke\Images\footer_bg.gif" />
+    <Content Include="Themes\DotNetNuke\Images\footer_cap_left.gif" />
+    <Content Include="Themes\DotNetNuke\Images\footer_cap_right.gif" />
+    <Content Include="Themes\DotNetNuke\Images\frame_bottom_center.gif" />
+    <Content Include="Themes\DotNetNuke\Images\frame_bottom_left.gif" />
+    <Content Include="Themes\DotNetNuke\Images\frame_bottom_right.gif" />
+    <Content Include="Themes\DotNetNuke\Images\frame_middle_left.gif" />
+    <Content Include="Themes\DotNetNuke\Images\frame_middle_right.gif" />
+    <Content Include="Themes\DotNetNuke\Images\frame_top_center.gif" />
+    <Content Include="Themes\DotNetNuke\Images\frame_top_left.gif" />
+    <Content Include="Themes\DotNetNuke\Images\frame_top_right.gif" />
+    <Content Include="Themes\DotNetNuke\Images\header_bg.gif" />
+    <Content Include="Themes\DotNetNuke\Images\header_cap_left.gif" />
+    <Content Include="Themes\DotNetNuke\Images\header_cap_right.gif" />
+    <Content Include="Themes\DotNetNuke\Images\mediaplayer.gif" />
+    <Content Include="Themes\DotNetNuke\Images\m_Back.gif" />
+    <Content Include="Themes\DotNetNuke\Images\m_save.gif" />
+    <Content Include="Themes\DotNetNuke\Images\picture_bottom_center.gif" />
+    <Content Include="Themes\DotNetNuke\Images\picture_bottom_left.gif" />
+    <Content Include="Themes\DotNetNuke\Images\picture_bottom_right.gif" />
+    <Content Include="Themes\DotNetNuke\Images\picture_middle_left.gif" />
+    <Content Include="Themes\DotNetNuke\Images\picture_middle_right.gif" />
+    <Content Include="Themes\DotNetNuke\Images\picture_spacer_center.gif" />
+    <Content Include="Themes\DotNetNuke\Images\picture_spacer_left.gif" />
+    <Content Include="Themes\DotNetNuke\Images\picture_spacer_right.gif" />
+    <Content Include="Themes\DotNetNuke\Images\picture_top_center.gif" />
+    <Content Include="Themes\DotNetNuke\Images\picture_top_left.gif" />
+    <Content Include="Themes\DotNetNuke\Images\picture_top_right.gif" />
+    <Content Include="Themes\DotNetNuke\Images\row_cap_left.gif" />
+    <Content Include="Themes\DotNetNuke\Images\row_cap_right.gif" />
+    <Content Include="Themes\DotNetNuke\Images\row_image_left.gif" />
+    <Content Include="Themes\DotNetNuke\Images\spacer.gif" />
+    <Content Include="Themes\DotNetNuke\Images\spacer_left.gif" />
+    <Content Include="Themes\DotNetNuke\Images\spacer_right.gif" />
+    <Content Include="Themes\DotNetNuke\Images\stars_0.gif" />
+    <Content Include="Themes\DotNetNuke\Images\stars_10.gif" />
+    <Content Include="Themes\DotNetNuke\Images\stars_15.gif" />
+    <Content Include="Themes\DotNetNuke\Images\stars_20.gif" />
+    <Content Include="Themes\DotNetNuke\Images\stars_25.gif" />
+    <Content Include="Themes\DotNetNuke\Images\stars_30.gif" />
+    <Content Include="Themes\DotNetNuke\Images\stars_35.gif" />
+    <Content Include="Themes\DotNetNuke\Images\stars_40.gif" />
+    <Content Include="Themes\DotNetNuke\Images\stars_45.gif" />
+    <Content Include="Themes\DotNetNuke\Images\stars_5.gif" />
+    <Content Include="Themes\DotNetNuke\Images\stars_50.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_book2.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_bookopen.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_bw.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_bwminus.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_bwplus.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_color.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_download.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_edit.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_exif.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_flash.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_flipx.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_flipy.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_folder.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_forum.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_help.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_jpg.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_letter.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_mediaPlayer.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_movie.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_new2.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_next.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_Picture.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_previous.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_Refresh.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_rotateLeft.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_rotateRight.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_settings.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_threadadd.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_threadview.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_zip.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_zoomin.gif" />
+    <Content Include="Themes\DotNetNuke\Images\s_zoomout.gif" />
+    <Content Include="Viewer.ascx" />
+    <Content Include="Voting.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Providers\DataProviders\SqlDataProvider\04.04.00.SqlDataProvider" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:10383/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v15.0\WebApplications\Microsoft.WebApplication.targets" />
+</Project>

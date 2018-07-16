@@ -1,0 +1,3590 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dotnetnuke.Modules.Gallery</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.Gallery.AlbumEdit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The AlbumEdit Class provides
+            </summary>
+            <remarks>
+            </remarks>
+            <history>
+            </history>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.trNavigation">
+            <summary>
+            trNavigation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.celHeaderLeft">
+            <summary>
+            celHeaderLeft control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.celGalleryMenu">
+            <summary>
+            celGalleryMenu control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.celBreadcrumbs">
+            <summary>
+            celBreadcrumbs control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.celHeaderRight">
+            <summary>
+            celHeaderRight control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.lblInfo">
+            <summary>
+            lblInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.rowDetails">
+            <summary>
+            rowDetails control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.plName">
+            <summary>
+            plName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.txtName">
+            <summary>
+            txtName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.lblAlbumName">
+            <summary>
+            lblAlbumName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.rqdFieldValidatorTxtName">
+            <summary>
+            rqdFieldValidatorTxtName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.validateCharacters4txtName">
+            <summary>
+            validateCharacters4txtName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.plTitle">
+            <summary>
+            plTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.txtTitle">
+            <summary>
+            txtTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.rqdFieldValidatorTxtTitle">
+            <summary>
+            rqdFieldValidatorTxtTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.plAuthor">
+            <summary>
+            plAuthor control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.txtAuthor">
+            <summary>
+            txtAuthor control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.plClient">
+            <summary>
+            plClient control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.txtClient">
+            <summary>
+            txtClient control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.plLocation">
+            <summary>
+            plLocation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.txtLocation">
+            <summary>
+            txtLocation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.plDescription">
+            <summary>
+            plDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.txtDescription">
+            <summary>
+            txtDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.rowApprovedDate">
+            <summary>
+            rowApprovedDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.plApprovedDate">
+            <summary>
+            plApprovedDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.txtApprovedDate">
+            <summary>
+            txtApprovedDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.cmdApprovedDate">
+            <summary>
+            cmdApprovedDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.valApprovedDate">
+            <summary>
+            valApprovedDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.rowOwner">
+            <summary>
+            rowOwner control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.plOwner">
+            <summary>
+            plOwner control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.ctlOwnerLookup">
+            <summary>
+            ctlOwnerLookup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.plCategories">
+            <summary>
+            plCategories control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.lstCategories">
+            <summary>
+            lstCategories control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.rowUpload">
+            <summary>
+            rowUpload control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.galControlUpload">
+            <summary>
+            galControlUpload control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.withEventsField_cmdUpdate">
+            <summary>
+            cmdUpdate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.withEventsField_cmdCancel">
+            <summary>
+            cmdCancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.rowAlbumGrid">
+            <summary>
+            rowAlbumGrid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.ControlAlbum1">
+            <summary>
+            ControlAlbum1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.rowRefuse">
+            <summary>
+            rowRefuse control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.plRefuseTitle">
+            <summary>
+            plRefuseTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.AlbumEdit.lblRefuse">
+            <summary>
+            lblRefuse control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.tbContent">
+            <summary>
+            tbContent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.rowFolders1">
+            <summary>
+            rowFolders1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.celHeaderLeft">
+            <summary>
+            celHeaderLeft control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.celGalleryMenu">
+            <summary>
+            celGalleryMenu control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.celBreadcrumbs">
+            <summary>
+            celBreadcrumbs control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.celHeaderRight">
+            <summary>
+            celHeaderRight control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.rowPager1">
+            <summary>
+            rowPager1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.celAltHeaderLeft">
+            <summary>
+            celAltHeaderLeft control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.ctlControlPager1">
+            <summary>
+            ctlControlPager1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.lblView">
+            <summary>
+            lblView control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.withEventsField_ddlGalleryView">
+            <summary>
+            ddlGalleryView control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.lblSortBy">
+            <summary>
+            lblSortBy control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.withEventsField_ddlGallerySort">
+            <summary>
+            ddlGallerySort control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.withEventsField_chkDESC">
+            <summary>
+            chkDESC control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.celAltHeaderRight">
+            <summary>
+            celAltHeaderRight control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.rowContent">
+            <summary>
+            rowContent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.celBodyLeft">
+            <summary>
+            celBodyLeft control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.celContent">
+            <summary>
+            celContent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.ctlGallery">
+            <summary>
+            ctlGallery control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.celBodyRight">
+            <summary>
+            celBodyRight control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.rowPager2">
+            <summary>
+            rowPager2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.celFooterLeft">
+            <summary>
+            celFooterLeft control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.ctlControlPager2">
+            <summary>
+            ctlControlPager2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.withEventsField_ClearCache">
+            <summary>
+            ClearCache control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.lblStats">
+            <summary>
+            lblStats control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.celFooterRight">
+            <summary>
+            celFooterRight control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.celleftBottomLeft">
+            <summary>
+            celleftBottomLeft control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.celBottum">
+            <summary>
+            celBottum control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Container.celBottomRight">
+            <summary>
+            celBottomRight control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Album.scnAlbumGrid">
+            <summary>
+            scnAlbumGrid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Album.rowContent">
+            <summary>
+            rowContent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Album.withEventsField_grdContent">
+            <summary>
+            grdContent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.BreadCrumbs.rptFolders">
+            <summary>
+            rptFolders control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Exif.mPhotoProps">
+            <summary>An instance of the PhotoProperties class</summary>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Exif.mPhotoPropsInitialized">
+            <summary>Has the PhotoProperties instance successfully initialized?</summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.Gallery.WebControls.Exif.InitializePhotoProperties(System.String)">
+            <summary>
+            Initializes the PhotoProperties tag properties using asynchronous 
+            method invocation of the initialization.</summary>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Exif.imgExif">
+            <summary>
+            imgExif control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Exif.rowGrid">
+            <summary>
+            rowGrid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Exif.grdExif">
+            <summary>
+            grdExif control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Exif.litInfo">
+            <summary>
+            litInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Exif.litDescription">
+            <summary>
+            litDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.FlashPlayer.litInfo">
+            <summary>
+            litInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.FlashPlayer.litDescription">
+            <summary>
+            litDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.GalleryMenu.ctlDNNMenu">
+            <summary>
+            ctlDNNMenu control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.LookupControl.tblLookup">
+            <summary>
+            tblLookup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.LookupControl.rowLookup">
+            <summary>
+            rowLookup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.LookupControl.celLookupItems">
+            <summary>
+            celLookupItems control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.LookupControl.celLookupData">
+            <summary>
+            celLookupData control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.LookupControl.txtItemsID">
+            <summary>
+            txtItemsID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.LookupControl.txtInputItemsID">
+            <summary>
+            txtInputItemsID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.MediaPlayer.ctrlMediaPlayer">
+            <summary>
+            ctrlMediaPlayer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.MediaPlayer.litInfo">
+            <summary>
+            litInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.MediaPlayer.litDescription">
+            <summary>
+            litDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Pager.spnPager">
+            <summary>
+            spnPager control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Pager.lblPageInfo">
+            <summary>
+            lblPageInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Pager.dlPager">
+            <summary>
+            dlPager control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Slideshow.celPicture">
+            <summary>
+            celPicture control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Slideshow.ErrorMessage">
+            <summary>
+            ErrorMessage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.Gallery.WebControls.Upload.cmdAdd_Click(System.Object,System.EventArgs)">
+            <summary>
+            Add the file to the list of files we want to upload
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.Gallery.WebControls.Upload.grdUpload_ItemCommand(System.Object,System.Web.UI.WebControls.DataGridCommandEventArgs)">
+            <summary>
+            User wants to remove a file from the grid of uploadable files
+            </summary>
+            <param name="source"></param>
+            <param name="e"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.Gallery.WebControls.Upload.btnFileUpload_Click(System.Object,System.EventArgs)">
+            <summary>
+            User wants to upload the file(s)
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <remarks></remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.scnInstructions">
+            <summary>
+            scnInstructions control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.trInstructions">
+            <summary>
+            trInstructions control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.tdInstructions">
+            <summary>
+            tdInstructions control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.scnInfo">
+            <summary>
+            scnInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.trInfo">
+            <summary>
+            trInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.tdInfo">
+            <summary>
+            tdInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.plAddFile">
+            <summary>
+            plAddFile control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.htmlUploadFile">
+            <summary>
+            htmlUploadFile control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.withEventsField_cmdAdd">
+            <summary>
+            cmdAdd control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.divFileError">
+            <summary>
+            divFileError control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.plTitle">
+            <summary>
+            plTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.txtTitle">
+            <summary>
+            txtTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.plAuthor">
+            <summary>
+            plAuthor control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.txtAuthor">
+            <summary>
+            txtAuthor control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.plClient">
+            <summary>
+            plClient control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.txtClient">
+            <summary>
+            txtClient control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.plLocation">
+            <summary>
+            plLocation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.txtLocation">
+            <summary>
+            txtLocation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.plDescription">
+            <summary>
+            plDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.txtDescription">
+            <summary>
+            txtDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.plCategories">
+            <summary>
+            plCategories control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.lstCategories">
+            <summary>
+            lstCategories control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.trPendingUploads">
+            <summary>
+            trPendingUploads control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.plAddedFiles">
+            <summary>
+            plAddedFiles control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.lblUpload">
+            <summary>
+            lblUpload control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.withEventsField_grdUpload">
+            <summary>
+            grdUpload control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.withEventsField_btnFileUpload">
+            <summary>
+            btnFileUpload control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Upload.withEventsField_cmdReturnCancel">
+            <summary>
+            cmdReturnCancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Viewer.MovePrevious">
+            <summary>
+            MovePrevious control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Viewer.MoveNext">
+            <summary>
+            MoveNext control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Viewer.ZoomOut">
+            <summary>
+            ZoomOut control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Viewer.ZoomIn">
+            <summary>
+            ZoomIn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Viewer.RotateLeft">
+            <summary>
+            RotateLeft control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Viewer.RotateRight">
+            <summary>
+            RotateRight control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Viewer.FlipX">
+            <summary>
+            FlipX control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Viewer.FlipY">
+            <summary>
+            FlipY control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Viewer.BWMinus">
+            <summary>
+            BWMinus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Viewer.Color">
+            <summary>
+            Color control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Viewer.BWPlus">
+            <summary>
+            BWPlus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Viewer.UpdateButton">
+            <summary>
+            UpdateButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Viewer.litInfo">
+            <summary>
+            litInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.WebControls.Viewer.litDescription">
+            <summary>
+            litDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.ExifMetaData.tblViewControl">
+            <summary>
+            tblViewControl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.ExifMetaData.lblTitle">
+            <summary>
+            lblTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.ExifMetaData.ctlExif">
+            <summary>
+            ctlExif control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.ExifMetaData.rowControls">
+            <summary>
+            rowControls control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.ExifMetaData.withEventsField_btnBack">
+            <summary>
+            btnBack control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.trNavigation">
+            <summary>
+            trNavigation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.celHeaderLeft">
+            <summary>
+            celHeaderLeft control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.celBreadcrumbs">
+            <summary>
+            celBreadcrumbs control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.celHeaderRight">
+            <summary>
+            celHeaderRight control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.lblInfo">
+            <summary>
+            lblInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.rowInfo">
+            <summary>
+            rowInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.plPath">
+            <summary>
+            plPath control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.txtPath">
+            <summary>
+            txtPath control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.plName">
+            <summary>
+            plName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.txtName">
+            <summary>
+            txtName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.plTitle">
+            <summary>
+            plTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.txtTitle">
+            <summary>
+            txtTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.plAuthor">
+            <summary>
+            plAuthor control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.txtAuthor">
+            <summary>
+            txtAuthor control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.plClient">
+            <summary>
+            plClient control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.txtClient">
+            <summary>
+            txtClient control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.plLocation">
+            <summary>
+            plLocation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.txtLocation">
+            <summary>
+            txtLocation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.plDescription">
+            <summary>
+            plDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.txtDescription">
+            <summary>
+            txtDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.plCreatedDate">
+            <summary>
+            plCreatedDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.txtCreatedDate">
+            <summary>
+            txtCreatedDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.cmdCreatedDate">
+            <summary>
+            cmdCreatedDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.valCreatedDate">
+            <summary>
+            valCreatedDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.rowApprovedDate">
+            <summary>
+            rowApprovedDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.plApprovedDate">
+            <summary>
+            plApprovedDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.txtApprovedDate">
+            <summary>
+            txtApprovedDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.cmdApprovedDate">
+            <summary>
+            cmdApprovedDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.valApprovedDate">
+            <summary>
+            valApprovedDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.plCategories">
+            <summary>
+            plCategories control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.lstCategories">
+            <summary>
+            lstCategories control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.tdFileEditImage">
+            <summary>
+            tdFileEditImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.cmdMovePrevious">
+            <summary>
+            cmdMovePrevious control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.lblCurrentFile">
+            <summary>
+            lblCurrentFile control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.cmdMoveNext">
+            <summary>
+            cmdMoveNext control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.imgFile">
+            <summary>
+            imgFile control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.lnkEditImage">
+            <summary>
+            lnkEditImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.withEventsField_cmdSave">
+            <summary>
+            cmdSave control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FileEdit.withEventsField_cmdReturn">
+            <summary>
+            cmdReturn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FlashPlayer.tblViewControl">
+            <summary>
+            tblViewControl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FlashPlayer.lblTitle">
+            <summary>
+            lblTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FlashPlayer.ctlFlashPlayer">
+            <summary>
+            ctlFlashPlayer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FlashPlayer.rowControls">
+            <summary>
+            rowControls control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FlashPlayer.withEventsField_btnBack">
+            <summary>
+            btnBack control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.FlashPlayer.ErrorMessage">
+            <summary>
+            ErrorMessage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.GalleryPageBase.Head">
+            <summary>
+            Head control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.GalleryPageBase.CSS">
+            <summary>
+            CSS control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.GalleryPageBase.SCRIPTS">
+            <summary>
+            SCRIPTS control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.GalleryPageBase.Form1">
+            <summary>
+            Form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.GalleryPageBase.lblTitle">
+            <summary>
+            lblTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.GalleryPageBase.phControl">
+            <summary>
+            phControl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.GalleryPageBase.btnClose">
+            <summary>
+            btnClose control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.Gallery.ImageEdit">
+            <summary>
+            ImageEdit class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Maintenance.trNavigation">
+            <summary>
+            trNavigation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Maintenance.celHeaderLeft">
+            <summary>
+            celHeaderLeft control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Maintenance.celGalleryMenu">
+            <summary>
+            celGalleryMenu control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Maintenance.celBreadcrumbs">
+            <summary>
+            celBreadcrumbs control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Maintenance.celHeaderRight">
+            <summary>
+            celHeaderRight control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Maintenance.withEventsField_ClearCache1">
+            <summary>
+            ClearCache1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Maintenance.rowDetails">
+            <summary>
+            rowDetails control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Maintenance.plPath">
+            <summary>
+            plPath control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Maintenance.txtPath">
+            <summary>
+            txtPath control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Maintenance.plName">
+            <summary>
+            plName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Maintenance.txtName">
+            <summary>
+            txtName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Maintenance.plAlbumInfo">
+            <summary>
+            plAlbumInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Maintenance.lblAlbumInfo">
+            <summary>
+            lblAlbumInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Maintenance.withEventsField_btnSyncAll">
+            <summary>
+            btnSyncAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Maintenance.withEventsField_btnDeleteAll">
+            <summary>
+            btnDeleteAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Maintenance.btnSelectAll">
+            <summary>
+            btnSelectAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Maintenance.btnDeselectAll">
+            <summary>
+            btnDeselectAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Maintenance.withEventsField_grdContent">
+            <summary>
+            grdContent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Maintenance.withEventsField_cmdReturn">
+            <summary>
+            cmdReturn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.MediaPlayer.tblViewControl">
+            <summary>
+            tblViewControl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.MediaPlayer.lblTitle">
+            <summary>
+            lblTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.MediaPlayer.ctlMediaPlayer">
+            <summary>
+            ctlMediaPlayer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.MediaPlayer.rowControls">
+            <summary>
+            rowControls control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.MediaPlayer.withEventsField_btnBack">
+            <summary>
+            btnBack control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.MediaPlayer.ErrorMessage">
+            <summary>
+            ErrorMessage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.PopupControls.PopupSelectMulti.ctlSearch">
+            <summary>
+            ctlSearch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.PopupControls.PopupSelectSingle.Form1">
+            <summary>
+            Form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.PopupControls.PopupSelectSingle.ctlSearch">
+            <summary>
+            ctlSearch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.Gallery.BaseRequest">
+            <summary>
+            Base class for generic gallery browsing
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.Gallery.GalleryFlashRequest">
+            <summary>
+            Class for using the viewer to view galleries
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.Gallery.GalleryRequest">
+            <summary>
+            Class for traditional gallery viewing (i.e., 'strip' viewing)
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.Gallery.GalleryViewerRequest">
+            <summary>
+            Class for using the viewer and slideshow to view galleries
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.celHeaderLeft">
+            <summary>
+            celHeaderLeft control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.lblAdminTitle">
+            <summary>
+            lblAdminTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.rowAdmin">
+            <summary>
+            rowAdmin control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.celBodyLeft0">
+            <summary>
+            celBodyLeft0 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.dshAdminSettings">
+            <summary>
+            dshAdminSettings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.tblAdminSettings">
+            <summary>
+            tblAdminSettings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plRootURL">
+            <summary>
+            plRootURL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.lblHomeDirectory">
+            <summary>
+            lblHomeDirectory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.RootURL">
+            <summary>
+            RootURL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.valRootURL">
+            <summary>
+            valRootURL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plCreatedDate">
+            <summary>
+            plCreatedDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.txtCreatedDate">
+            <summary>
+            txtCreatedDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plQuota">
+            <summary>
+            plQuota control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.txtQuota">
+            <summary>
+            txtQuota control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.Regularexpressionvalidator9">
+            <summary>
+            Regularexpressionvalidator9 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plMaxFileSize">
+            <summary>
+            plMaxFileSize control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.txtMaxFileSize">
+            <summary>
+            txtMaxFileSize control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.Regularexpressionvalidator8">
+            <summary>
+            Regularexpressionvalidator8 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.lblMaxFileSizeWarning">
+            <summary>
+            lblMaxFileSizeWarning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plMaxPendingUploadsSize">
+            <summary>
+            plMaxPendingUploadsSize control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.txtMaxPendingUploadsSize">
+            <summary>
+            txtMaxPendingUploadsSize control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.Regularexpressionvalidator1">
+            <summary>
+            Regularexpressionvalidator1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.RangeValidator1">
+            <summary>
+            RangeValidator1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plAutoApproval">
+            <summary>
+            plAutoApproval control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.chkAutoApproval">
+            <summary>
+            chkAutoApproval control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plBuildCacheOnStart">
+            <summary>
+            plBuildCacheOnStart control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.chkBuildCacheOnStart">
+            <summary>
+            chkBuildCacheOnStart control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.celBodyRight0">
+            <summary>
+            celBodyRight0 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.rowDisplaySettings">
+            <summary>
+            rowDisplaySettings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.celBodyLeft2">
+            <summary>
+            celBodyLeft2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.dshDisplaySettings">
+            <summary>
+            dshDisplaySettings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.tblDisplaySettings">
+            <summary>
+            tblDisplaySettings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plSkin">
+            <summary>
+            plSkin control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.ddlSkins">
+            <summary>
+            ddlSkins control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plGalleryTitle">
+            <summary>
+            plGalleryTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.txtGalleryTitle">
+            <summary>
+            txtGalleryTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plDefaultAlbum">
+            <summary>
+            plDefaultAlbum control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.ddlDefaultAlbum">
+            <summary>
+            ddlDefaultAlbum control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plImageExtensions">
+            <summary>
+            plImageExtensions control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.lblImageExtensions">
+            <summary>
+            lblImageExtensions control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plMediaExtensions">
+            <summary>
+            plMediaExtensions control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.lblMediaExtensions">
+            <summary>
+            lblMediaExtensions control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.trDescription">
+            <summary>
+            trDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plDescription">
+            <summary>
+            plDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.txtDescription">
+            <summary>
+            txtDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plFixedWidth">
+            <summary>
+            plFixedWidth control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.txtFixedWidth">
+            <summary>
+            txtFixedWidth control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.valFixedWidth1">
+            <summary>
+            valFixedWidth1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.valFixedWidth2">
+            <summary>
+            valFixedWidth2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plFixedHeight">
+            <summary>
+            plFixedHeight control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.txtFixedHeight">
+            <summary>
+            txtFixedHeight control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.valFixedHeight1">
+            <summary>
+            valFixedHeight1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.valFixedHeight2">
+            <summary>
+            valFixedHeight2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plStripWidth">
+            <summary>
+            plStripWidth control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.txtStripWidth">
+            <summary>
+            txtStripWidth control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.valStripWidth1">
+            <summary>
+            valStripWidth1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.valStripWidth2">
+            <summary>
+            valStripWidth2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plStripHeight">
+            <summary>
+            plStripHeight control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.txtStripHeight">
+            <summary>
+            txtStripHeight control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.valStripHeight1">
+            <summary>
+            valStripHeight1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.valStripHeight2">
+            <summary>
+            valStripHeight2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plMaxThumbWidth">
+            <summary>
+            plMaxThumbWidth control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.txtMaxThumbWidth">
+            <summary>
+            txtMaxThumbWidth control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.valMaxThumbWidth1">
+            <summary>
+            valMaxThumbWidth1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.valMaxThumbWidth2">
+            <summary>
+            valMaxThumbWidth2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plMaxThumbHeight">
+            <summary>
+            plMaxThumbHeight control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.txtMaxThumbHeight">
+            <summary>
+            txtMaxThumbHeight control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.valMaxThumbHeight1">
+            <summary>
+            valMaxThumbHeight1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.valMaxThumbHeight2">
+            <summary>
+            valMaxThumbHeight2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plEncoderQuality">
+            <summary>
+            plEncoderQuality control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.txtEncoderQuality">
+            <summary>
+            txtEncoderQuality control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.valEncoderQuality1">
+            <summary>
+            valEncoderQuality1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.valEncoderQuality2">
+            <summary>
+            valEncoderQuality2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plDisplay">
+            <summary>
+            plDisplay control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.lstDisplay">
+            <summary>
+            lstDisplay control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plCategoryValues">
+            <summary>
+            plCategoryValues control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.txtCategoryValues">
+            <summary>
+            txtCategoryValues control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plSortProperties">
+            <summary>
+            plSortProperties control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.lstSortProperties">
+            <summary>
+            lstSortProperties control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plGallerySort">
+            <summary>
+            plGallerySort control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.ddlGallerySort">
+            <summary>
+            ddlGallerySort control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.chkDESC">
+            <summary>
+            chkDESC control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plGalleryView">
+            <summary>
+            plGalleryView control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.ddlGalleryView">
+            <summary>
+            ddlGalleryView control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.chkChangeView">
+            <summary>
+            chkChangeView control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.celBodyRight2">
+            <summary>
+            celBodyRight2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.dshFeatureSettings">
+            <summary>
+            dshFeatureSettings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.tblFeatureSettings">
+            <summary>
+            tblFeatureSettings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plSlideshowSpeed">
+            <summary>
+            plSlideshowSpeed control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.txtSlideshowSpeed">
+            <summary>
+            txtSlideshowSpeed control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.valSlideShowSpeed1">
+            <summary>
+            valSlideShowSpeed1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.valSlideShowSpeed2">
+            <summary>
+            valSlideShowSpeed2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plSlideshow">
+            <summary>
+            plSlideshow control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.chkSlideshow">
+            <summary>
+            chkSlideshow control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plPopup">
+            <summary>
+            plPopup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.chkPopup">
+            <summary>
+            chkPopup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plMultiLevelMenu">
+            <summary>
+            plMultiLevelMenu control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.chkMultiLevelMenu">
+            <summary>
+            chkMultiLevelMenu control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plWatermark">
+            <summary>
+            plWatermark control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.chkWatermark">
+            <summary>
+            chkWatermark control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plExif">
+            <summary>
+            plExif control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.chkExif">
+            <summary>
+            chkExif control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plVoting">
+            <summary>
+            plVoting control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.chkVoting">
+            <summary>
+            chkVoting control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plDownload">
+            <summary>
+            plDownload control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.chkDownload">
+            <summary>
+            chkDownload control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.rowDownloadRoles">
+            <summary>
+            rowDownloadRoles control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plDownloadRoles">
+            <summary>
+            plDownloadRoles control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.ctlDownloadRoles">
+            <summary>
+            ctlDownloadRoles control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.dshPrivateGallery">
+            <summary>
+            dshPrivateGallery control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.tblPrivateGallery">
+            <summary>
+            tblPrivateGallery control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plPrivate">
+            <summary>
+            plPrivate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.chkPrivate">
+            <summary>
+            chkPrivate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.rowOwner">
+            <summary>
+            rowOwner control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.plOwnerLookup">
+            <summary>
+            plOwnerLookup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.ctlOwnerLookup">
+            <summary>
+            ctlOwnerLookup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.withEventsField_cmdSave">
+            <summary>
+            cmdSave control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Settings.withEventsField_cmdReturn">
+            <summary>
+            cmdReturn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Slideshow.tblViewControl">
+            <summary>
+            tblViewControl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Slideshow.lblTitle">
+            <summary>
+            lblTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Slideshow.ctlSlideshow">
+            <summary>
+            ctlSlideshow control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Slideshow.rowControls">
+            <summary>
+            rowControls control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Slideshow.withEventsField_btnBack">
+            <summary>
+            btnBack control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.Gallery.GalleryUploadCollection.UnzipFiles(DotNetNuke.Modules.Gallery.FileToUpload,System.String,System.String,System.String)">
+            <summary>
+            Unzip a bunch of files inside of a zip file
+            </summary>
+            <param name="UploadFile"></param>
+            <param name="UploadPath"></param>
+            <param name="UploadFilePath"></param>
+            <param name="AlbumFilePath"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.Gallery.GalleryUploadCollection.Unzip(ICSharpCode.SharpZipLib.Zip.ZipEntry,ICSharpCode.SharpZipLib.Zip.ZipInputStream,System.String)">
+            <summary>
+            Unzip an individual file and save it to a directory
+            </summary>
+            <param name="ZipEntry"></param>
+            <param name="InputStream"></param>
+            <param name="TempDir"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.Gallery.GalleryUploadCollection.DoResize(System.String,System.String)">
+            <summary>
+            Resize the uploaded image and put it into the album's folder
+            </summary>
+            <param name="UploadFile">File to resize</param>
+            <param name="AlbumFile">Where to store the resized file</param>
+            <remarks></remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.Gallery.FileToUpload.ValidateFile">
+            <summary>
+            Validate the upload file to see if it meets some general
+            Criteria we have for valid files
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.Gallery.Utils.RemoveEmptyParams(System.String[])">
+            <summary>
+            Added by Stefan Cullman to workaround a Core problem in FURL's
+            </summary>
+            <param name="params">The parameters in the request querystring</param>
+            <returns>a string of parameters with the empty parameter cleaned up</returns>
+            <remarks>This is placed inside methods that use params from the qs</remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.Gallery.GalleryXML.SaveMetaData(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.DateTime,System.DateTime,System.Double)">
+            <summary>
+            Save the metadata to the XML file
+            </summary>
+            <param name="Directory"></param>
+            <param name="FileName"></param>
+            <param name="ID"></param>
+            <param name="Title"></param>
+            <param name="Description"></param>
+            <param name="Categories"></param>
+            <param name="Author"></param>
+            <param name="Location"></param>
+            <param name="Client"></param>
+            <param name="OwnerID"></param>
+            <param name="CreatedDate"></param>
+            <param name="ApprovedDate"></param>
+            <param name="Score"></param>
+            <remarks></remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Viewer.tblViewControl">
+            <summary>
+            tblViewControl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Viewer.lblTitle">
+            <summary>
+            lblTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Viewer.ctlViewer">
+            <summary>
+            ctlViewer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Viewer.rowControls">
+            <summary>
+            rowControls control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Viewer.withEventsField_btnBack">
+            <summary>
+            btnBack control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.Gallery.Views.BaseView">
+            <summary>
+            Base object used by various gallery view code
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.Gallery.Views.GalleryControl">
+            <summary>
+            GUI code inserted into the aspx page that is common across all views
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.tdTitle">
+            <summary>
+            tdTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.tdFilePreview">
+            <summary>
+            tdFilePreview control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.imgTitle">
+            <summary>
+            imgTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.lnkTitle">
+            <summary>
+            lnkTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.lnkThumb">
+            <summary>
+            lnkThumb control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.imgVoteSummary">
+            <summary>
+            imgVoteSummary control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.divDetails">
+            <summary>
+            divDetails control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.tdResult">
+            <summary>
+            tdResult control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.lblResult">
+            <summary>
+            lblResult control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.tdName">
+            <summary>
+            tdName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.lblName">
+            <summary>
+            lblName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.tdCreatedDate">
+            <summary>
+            tdCreatedDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.lblDate">
+            <summary>
+            lblDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.tdAuthor">
+            <summary>
+            tdAuthor control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.lblAuthor">
+            <summary>
+            lblAuthor control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.tdDescription">
+            <summary>
+            tdDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.lblDescription">
+            <summary>
+            lblDescription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.withEventsField_btnAddVote">
+            <summary>
+            btnAddVote control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.divAddVote">
+            <summary>
+            divAddVote control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.tdYourRating">
+            <summary>
+            tdYourRating control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.lstVote">
+            <summary>
+            lstVote control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.plComments">
+            <summary>
+            plComments control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.txtComment">
+            <summary>
+            txtComment control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.withEventsField_cmdCancel">
+            <summary>
+            cmdCancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.withEventsField_btnSave">
+            <summary>
+            btnSave control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.trVotes">
+            <summary>
+            trVotes control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.lblVotes">
+            <summary>
+            lblVotes control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.dlVotes">
+            <summary>
+            dlVotes control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.Gallery.Voting.withEventsField_btnBack">
+            <summary>
+            btnBack control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+    </members>
+</doc>
