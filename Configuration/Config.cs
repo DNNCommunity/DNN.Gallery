@@ -810,8 +810,8 @@ namespace DotNetNuke.Modules.Gallery
 			}
 
 			// Now iterate through all the values and init local variables
-			mRootURL = _portalSettings.HomeDirectory + GetValue(settings["RootURL"], DefaultRootURL + ModuleId.ToString() + "/");
-			mGalleryTitle = GetValue(settings["GalleryTitle"], DefaultGalleryTitle);
+			mRootURL = _portalSettings.HomeDirectory + GetValue(settings["RootURL"].ToString(), DefaultRootURL + ModuleId.ToString() + "/");
+			mGalleryTitle = GetValue(settings["GalleryTitle"].ToString(), DefaultGalleryTitle);
 
 			try {
 				mRootPath = HttpContext.Current.Request.MapPath(mRootURL);
@@ -1010,24 +1010,24 @@ namespace DotNetNuke.Modules.Gallery
 			} else {
 				if (DefaultValue is System.Enum) {
 					try {
-						return (T)Enum.Parse(typeof(T), Convert.ToString(Input));
-					} catch (ArgumentException ex) {
+						return ((T)Enum.Parse(typeof(T), Convert.ToString(Input)));
+					} catch (ArgumentException) {
 						return DefaultValue;
 					}
 				} else if (DefaultValue is System.DateTime) {
 					object objDateTime = null;
 					try {
 						objDateTime = DateTime.Parse(Convert.ToString(Input));
-					} catch (FormatException ex) {
+					} catch (FormatException) {
 						DateTime dt = default(DateTime);
 						if (!DateTime.TryParse(Convert.ToString(Input), System.Globalization.DateTimeFormatInfo.InvariantInfo, System.Globalization.DateTimeStyles.None, out dt)) {
 							dt = DateTime.Now;
 						}
 						objDateTime = dt;
 					}
-					return (T)objDateTime;
+					return (T)Convert.ChangeType(objDateTime, typeof(T));
 				} else {
-					return (T)Input;
+					return (T)Convert.ChangeType(Input, typeof(T));
 				}
 			}
 		}
