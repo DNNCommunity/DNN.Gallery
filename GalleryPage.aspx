@@ -10,6 +10,7 @@
     <meta content="http://schemas.microsoft.com/intellisense/ie3-2nav3-0" name="vs_targetSchema" />
     <asp:placeholder id="CSS" runat="server" />
     <asp:Placeholder id="SCRIPTS" runat="server" />
+    <script src="/Resources/Shared/Scripts/jquery/jquery.min.js?1.6.1" type="text/javascript"></script>
     <script type="text/javascript" language="javascript" src='<%=Page.ResolveUrl("DesktopModules/Gallery/Popup/gallerypopup.js")%>'></script>
     <script type="text/javascript" language="javascript">			
 		function closeWindow()
